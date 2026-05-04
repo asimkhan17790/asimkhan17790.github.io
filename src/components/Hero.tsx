@@ -11,11 +11,12 @@ interface Props {
 }
 
 const LABELS: { text: string; color: string }[] = [
-  { text: 'Techie',            color: '#3b82f6' },
-  { text: 'Gamer',             color: '#8b5cf6' },
-  { text: 'Music Lover',       color: '#f43f5e' },
+  { text: 'Techie', color: '#4f93ffff' },
+  { text: 'Night Time Gamer', color: '#8b5cf6' },
+  { text: 'Music Lover', color: '#f43f5e' },
   { text: 'Sports Enthusiast', color: '#22c55e' },
-  { text: 'Foodie',            color: '#f97316' },
+  { text: 'Foodie', color: '#f97316' },
+  { text: 'Fitness Freak', color: '#0320ffff' }
 ]
 
 function TypewriterBadge() {
