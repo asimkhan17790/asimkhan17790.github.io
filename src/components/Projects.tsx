@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { staggerContainer, fadeUp } from '../lib/motion'
 import { useGithubRepos } from '../hooks/useGithubRepos'
 import RepoCard from './RepoCard'
+
+const SKELETONS = Array.from({ length: 6 }, (_, i) => i)
 
 function SkeletonCard() {
   return (
@@ -18,8 +20,8 @@ export default function Projects() {
   const { repos, loading } = useGithubRepos()
   const reduced = useReducedMotion()
   const [filter, setFilter] = useState<string>('All')
-  const languages = ['All', ...Array.from(new Set(repos.map(r => r.language).filter(Boolean) as string[]))]
-  const filtered = filter === 'All' ? repos : repos.filter(r => r.language === filter)
+  const languages = useMemo(() => ['All', ...Array.from(new Set(repos.map(r => r.language).filter(Boolean) as string[]))], [repos])
+  const filtered = useMemo(() => filter === 'All' ? repos : repos.filter(r => r.language === filter), [repos, filter])
   return (
     <section id="projects" className="py-20 px-6 max-w-5xl mx-auto">
       <motion.div variants={reduced ? fadeUp : staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.05 }}>
@@ -39,8 +41,8 @@ export default function Projects() {
             ))}
           </motion.div>
         )}
-        <motion.div variants={reduced ? {} : staggerContainer} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {loading ? Array.from({ length: 6 }).map((_, i) => <SkeletonCard key={i} />) : filtered.map(repo => <RepoCard key={repo.id} repo={repo} />)}
+        <motion.div key={filter} variants={reduced ? {} : staggerContainer} initial="hidden" animate="visible" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {loading ? SKELETONS.map(i => <SkeletonCard key={i} />) : filtered.map(repo => <RepoCard key={repo.id} repo={repo} />)}
         </motion.div>
       </motion.div>
     </section>

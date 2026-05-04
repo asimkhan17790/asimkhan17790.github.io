@@ -2,6 +2,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { GraduationCap } from 'lucide-react'
 import { staggerContainer, fadeUp } from '../lib/motion'
 import { education } from '../data/education'
+import LogoBadge from './LogoBadge'
 
 export default function Education() {
   const reduced = useReducedMotion()
@@ -14,9 +15,9 @@ export default function Education() {
           {education.map(deg => (
             <motion.div key={deg.institution} variants={fadeUp} className="rounded-xl p-6 border border-color" style={{ background: 'var(--card)' }}>
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-                  style={{ background: 'color-mix(in srgb, var(--accent) 15%, transparent)' }}>
-                  <GraduationCap size={18} style={{ color: 'var(--accent)' }} />
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 overflow-hidden border border-color"
+                  style={{ background: 'var(--card)' }}>
+                  <LogoBadge src={deg.logoUrl} alt={deg.institution} fallback={<GraduationCap size={18} style={{ color: 'var(--accent)' }} />} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-sm leading-snug">{deg.institution}</h3>

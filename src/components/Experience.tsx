@@ -2,6 +2,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { staggerContainer, fadeUp } from '../lib/motion'
 import { experience } from '../data/experience'
 import TimelineItem from './TimelineItem'
+import LogoBadge from './LogoBadge'
 
 export default function Experience() {
   const reduced = useReducedMotion()
@@ -24,10 +25,10 @@ export default function Experience() {
             <motion.div key={job.company} variants={fadeUp}>
               <div className="flex items-center gap-3 mb-5">
                 <span
-                  className="w-10 h-10 rounded-lg flex items-center justify-center text-xs font-bold font-mono shrink-0 border border-color"
+                  className="w-10 h-10 rounded-lg flex items-center justify-center text-xs font-bold font-mono shrink-0 border border-color overflow-hidden"
                   style={{ background: 'var(--card)', color: 'var(--accent)' }}
                 >
-                  {job.logo}
+                  <LogoBadge src={job.logoUrl} alt={job.company} fallback={job.logo} />
                 </span>
                 <div>
                   <h3 className="font-semibold">{job.company}</h3>

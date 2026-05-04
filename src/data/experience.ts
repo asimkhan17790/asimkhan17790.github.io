@@ -9,6 +9,7 @@ export interface Job {
   company: string
   location: string
   logo: string
+  logoUrl?: string
   roles: Role[]
 }
 
@@ -17,15 +18,15 @@ export const experience: Job[] = [
     company: 'Goldman Sachs',
     location: 'Jersey City, NJ',
     logo: 'GS',
+    logoUrl: '/gs.jpg',
     roles: [
       {
         title: 'Vice President',
         period: 'Dec 2022 – Present',
-        summary: 'Leading cloud-native regulatory reporting infrastructure and globally distributed engineering teams.',
+        summary: 'Building scalable data platforms and tooling to enable financial analysis.',
         bullets: [
           'Architected migration of regulatory reporting workflows to cloud-native AWS Lambda & Glue stack — reduced production support cost by 70%.',
           'Built configurable ETL averaging pipeline on AWS Glue + Snowflake processing 100M records/quarter and 2M records/day across 3 data sources.',
-          'Led production support for 150+ regulatory workflows across 40+ FED reports; managed globally distributed US/India team.',
           'Acted as SME providing technical guidance and driving recurring-issue resolution to systematically reduce support overhead.',
         ],
       },
@@ -61,6 +62,7 @@ export const experience: Job[] = [
     company: 'Nok Nok Labs',
     location: 'Palo Alto, CA',
     logo: 'NNL',
+    logoUrl: '/noknok.png',
     roles: [
       {
         title: 'Software Engineering Intern',
@@ -78,6 +80,7 @@ export const experience: Job[] = [
     company: 'Citi',
     location: 'Pune, India',
     logo: 'C',
+    logoUrl: '/citi.png',
     roles: [
       {
         title: 'Software Engineer',
@@ -95,6 +98,7 @@ export const experience: Job[] = [
     company: 'Accenture',
     location: 'Pune, India',
     logo: 'ACC',
+    logoUrl: '/accenture.webp',
     roles: [
       {
         title: 'Software Engineering Analyst',

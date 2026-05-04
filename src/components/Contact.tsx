@@ -26,7 +26,7 @@ export default function Contact() {
           style={{ color: 'var(--accent)' }}>Contact</motion.p>
         <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-4">{"Let's connect."}</motion.h2>
         <motion.p variants={fadeUp} className="text-muted max-w-md mx-auto mb-10">
-          Open to interesting conversations, collaborations, and opportunities.
+          Open to interesting conversations, collaborations, and new ideas.
         </motion.p>
         <motion.div variants={reduced ? {} : staggerContainer} className="flex flex-col sm:flex-row gap-4 justify-center">
           {links.map(link => (
