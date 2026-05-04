@@ -1,33 +1,71 @@
-# Asim Khan
+# asimkhan17790.github.io
 
+Personal portfolio site for Asim Khan — built with React 18, TypeScript, Vite, Tailwind CSS, and Framer Motion. Deployed to GitHub Pages.
 
+## Tech Stack
 
-## 🚀 About Me
-I'm passionate about building impactful solutions with code. Whether it's Python scripting, AI experiments, or web development, I love turning ideas into reality. My repositories showcase a variety of projects ranging from hands-on coding practice to personal growth tools.
+| Layer | Choice |
+|-------|--------|
+| UI | React 18 + TypeScript |
+| Build | Vite |
+| Styling | Tailwind CSS (dark mode via `class`) |
+| Animation | Framer Motion |
+| Deployment | GitHub Pages (`dist/`) |
 
-## 🛠️ Skills & Interests
-- **Programming Languages:** Python, JavaScript, HTML/CSS
-- **Domains:** Artificial Intelligence, Web Development, Automation, Data Science
-- **Tools & Frameworks:** Git, Jupyter, Flask, React
+## Project Structure
 
-## 🌟 Featured Projects
-- [pythonLearning](https://github.com/asimkhan17790/pythonLearning): My journey to mastering Python.
-- [ai-practise](https://github.com/asimkhan17790/ai-practise): Experiments and learning in AI.
-- [mindtherapy](https://github.com/asimkhan17790/mindtherapy): Personal development and wellness tools.
+```
+src/
+├── components/       # One component per page section
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Experience.tsx
+│   ├── Skills.tsx
+│   ├── Projects.tsx
+│   ├── Education.tsx
+│   └── Contact.tsx
+├── data/             # All personal content as typed TS constants
+│   ├── profile.ts
+│   ├── experience.ts
+│   ├── skills.ts
+│   └── education.ts
+├── hooks/
+│   ├── useTheme.ts         # light/dark toggle, persisted in localStorage
+│   ├── useActiveSection.ts # IntersectionObserver-based active nav tracking
+│   └── useGithubRepos.ts   # Live GitHub API fetch with sessionStorage cache
+├── lib/
+│   └── motion.ts           # Shared Framer Motion variants (fadeUp, slideInLeft, etc.)
+└── App.tsx                 # Root — assembles sections, passes theme props
+public/
+└── AsimKhan.pdf            # Resume served as static asset
+```
 
-## 📈 My GitHub Stats
-![Asim's GitHub Stats](https://github-readme-stats.vercel.app/api?username=asimkhan17790&show_icons=true&theme=radical)
+## Key Behaviors
 
-## 📫 Let's Connect!
-Feel free to browse my projects, open issues, and reach out for collaboration!
+**Data layer** — all personal content lives in `src/data/`. Edit those files to update site content; no CMS or API involved.
 
----
+**Theme** — `useTheme` stores `light`/`dark` in `localStorage` and toggles a `dark` class on `<html>`. All dark styles driven by Tailwind's `darkMode: 'class'`.
 
-### 🎯 Help Me Personalize My README!
-To make this profile truly outstanding, could you share a few details?
-- **Your profession or current role**
-- **Top 3 technical skills**
-- **Favorite or most proud project**
-- **Any social links (LinkedIn, Twitter, personal website, etc.)**
+**Active nav** — `useActiveSection` uses `IntersectionObserver` to detect which section is in view; result passed to `Nav` for highlight.
 
-Reply with your answers and I'll refine your README for maximum impact!
+**Projects section** — `useGithubRepos` fetches live from the GitHub API (`asimkhan17790`), caches results in `sessionStorage` for 1 hour, falls back to a hardcoded list on error.
+
+**Animations** — shared `Variants` in `src/lib/motion.ts`. Components use `<motion.div whileInView viewport={{ once: true }}>`.
+
+## Commands
+
+```bash
+npm run dev        # Vite dev server → http://localhost:5173
+npm run build      # tsc type-check + production build → dist/
+npm run preview    # serve dist/ locally
+```
+
+No test runner configured. Type-check only via `tsc --noEmit`.
+
+## Deployment
+
+Push to `main`. GitHub Pages serves the `dist/` output from `npm run build`.
+
+## Resume
+
+PDF at `public/AsimKhan.pdf` — replace the file to refresh the resume link on the site.
