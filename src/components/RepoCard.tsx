@@ -2,14 +2,10 @@ import { useRef } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 import { Star, ExternalLink, Code } from 'lucide-react'
 import { scaleIn } from '../lib/motion'
+import { LANG_COLORS } from '../lib/langColors'
 import type { GithubRepo } from '../hooks/useGithubRepos'
 
 interface Props { repo: GithubRepo }
-
-const LANG_COLORS: Record<string, string> = {
-  Python: '#3776ab', JavaScript: '#f7df1e', TypeScript: '#3178c6',
-  Java: '#b07219', HTML: '#e34c26', CSS: '#563d7c', Shell: '#89e051',
-}
 
 export default function RepoCard({ repo }: Props) {
   const ref = useRef<HTMLAnchorElement>(null)
