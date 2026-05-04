@@ -9,7 +9,7 @@ export default function SkillBadge({ name }: Props) {
   return (
     <motion.span
       variants={scaleIn}
-      whileHover={{ y: -2, scale: 1.05 }}
+      whileHover={{ y: -2, scale: 1.05, boxShadow: '0 0 14px -4px var(--accent)' }}
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       className="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium border border-color cursor-default"
       style={{ background: 'var(--card)' }}

@@ -16,12 +16,23 @@ export default function TimelineItem({ role, isLast }: Props) {
     >
       {/* vertical line */}
       {!isLast && (
-        <span className="absolute left-[7px] top-3 bottom-0 w-px" style={{ background: 'var(--border)' }} />
+        <motion.span
+          className="absolute left-[7px] top-3 bottom-0 w-px origin-top"
+          style={{ background: 'var(--border)' }}
+          initial={{ scaleY: 0 }}
+          whileInView={{ scaleY: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+        />
       )}
       {/* dot */}
-      <span
+      <motion.span
         className="absolute left-0 top-[6px] w-3.5 h-3.5 rounded-full border-2"
         style={{ borderColor: 'var(--accent)', background: 'var(--bg)' }}
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ type: 'spring', stiffness: 300, damping: 15, delay: 0.1 }}
       />
 
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">

@@ -1,6 +1,17 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { profile } from '../data/profile'
 import { fadeUp, slideInLeft } from '../lib/motion'
+import { useCountUp } from '../hooks/useCountUp'
+
+function StatCard({ label, value }: { label: string; value: string }) {
+  const { ref, display } = useCountUp(value)
+  return (
+    <div ref={ref} className="rounded-xl p-5 border border-color" style={{ background: 'var(--card)' }}>
+      <div className="text-3xl font-bold mb-1" style={{ color: 'var(--accent)' }}>{display}</div>
+      <div className="text-xs text-muted">{label}</div>
+    </div>
+  )
+}
 
 export default function About() {
   const reduced = useReducedMotion()
@@ -34,16 +45,7 @@ export default function About() {
             { label: 'Records / day', value: '2M+' },
             { label: 'Records / quarter', value: '100M+' },
           ].map(stat => (
-            <div
-              key={stat.label}
-              className="rounded-xl p-5 border border-color"
-              style={{ background: 'var(--card)' }}
-            >
-              <div className="text-3xl font-bold mb-1" style={{ color: 'var(--accent)' }}>
-                {stat.value}
-              </div>
-              <div className="text-xs text-muted">{stat.label}</div>
-            </div>
+            <StatCard key={stat.label} label={stat.label} value={stat.value} />
           ))}
         </motion.div>
       </div>

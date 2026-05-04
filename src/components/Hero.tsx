@@ -1,4 +1,5 @@
-import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
+import { useState, useEffect, useRef } from 'react'
+import { motion, useReducedMotion, useMotionValue, useSpring } from 'framer-motion'
 import { Github, Linkedin, FileText, ChevronDown } from 'lucide-react'
 import { profile } from '../data/profile'
 import { fadeUp, staggerContainer } from '../lib/motion'
@@ -9,21 +10,141 @@ interface Props {
   toggleTheme: () => void
 }
 
-export default function Hero({ theme, toggleTheme }: Props) {
-  const { scrollY } = useScroll()
+const LABELS: { text: string; color: string }[] = [
+  { text: 'Techie',            color: '#3b82f6' },
+  { text: 'Gamer',             color: '#8b5cf6' },
+  { text: 'Music Lover',       color: '#f43f5e' },
+  { text: 'Sports Enthusiast', color: '#22c55e' },
+  { text: 'Foodie',            color: '#f97316' },
+]
+
+function TypewriterBadge() {
   const reduced = useReducedMotion()
-  const blobY = useTransform(scrollY, [0, 400], [0, reduced ? 0 : 80])
+  const [index, setIndex] = useState(0)
+  const [text, setText] = useState('')
+  const [deleting, setDeleting] = useState(false)
+
+  useEffect(() => {
+    if (reduced) return
+    const current = LABELS[index].text
+
+    if (!deleting && text === current) {
+      const t = setTimeout(() => setDeleting(true), 1500)
+      return () => clearTimeout(t)
+    }
+    if (deleting && text === '') {
+      const t = setTimeout(() => {
+        setDeleting(false)
+        setIndex((i) => (i + 1) % LABELS.length)
+      }, 300)
+      return () => clearTimeout(t)
+    }
+
+    const speed = deleting ? 45 : 90
+    const t = setTimeout(() => {
+      setText(deleting ? current.slice(0, text.length - 1) : current.slice(0, text.length + 1))
+    }, speed)
+    return () => clearTimeout(t)
+  }, [text, deleting, index, reduced])
+
+  const color = LABELS[index].color
+  const display = reduced ? LABELS.map(l => l.text).join(' | ') : text
+
+  return (
+    <span
+      className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-mono font-medium border"
+      style={{ borderColor: 'var(--accent)', color: 'var(--accent)', minWidth: '16rem' }}
+    >
+      <span className="opacity-60 mr-1">I am&nbsp;</span>
+      <motion.span
+        animate={{ color }}
+        transition={{ duration: 0.4, ease: 'easeInOut' }}
+        className="inline-flex items-center"
+      >
+        {display}
+        {!reduced && (
+          <motion.span
+            animate={{ background: color }}
+            transition={{ duration: 0.4, ease: 'easeInOut' }}
+            className="ml-0.5 inline-block w-px h-3.5 align-middle"
+            style={{ animation: 'blink 1s step-end infinite' }}
+          />
+        )}
+      </motion.span>
+      <style>{`@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}`}</style>
+    </span>
+  )
+}
+
+interface MagneticProps {
+  children: React.ReactNode
+  href: string
+  target?: string
+  rel?: string
+  className?: string
+  style?: React.CSSProperties
+}
+
+function MagneticButton({ children, href, target, rel, className, style }: MagneticProps) {
+  const ref = useRef<HTMLAnchorElement>(null)
+  const x = useMotionValue(0)
+  const y = useMotionValue(0)
+  const sx = useSpring(x, { stiffness: 200, damping: 20 })
+  const sy = useSpring(y, { stiffness: 200, damping: 20 })
+
+  function onMove(e: { clientX: number; clientY: number }) {
+    if (!ref.current) return
+    const r = ref.current.getBoundingClientRect()
+    x.set((e.clientX - r.left - r.width / 2) * 0.3)
+    y.set((e.clientY - r.top - r.height / 2) * 0.3)
+  }
+
+  function onLeave() { x.set(0); y.set(0) }
+
+  return (
+    <motion.a
+      ref={ref}
+      href={href}
+      target={target}
+      rel={rel}
+      style={{ x: sx, y: sy, ...style }}
+      onMouseMove={onMove}
+      onMouseLeave={onLeave}
+      className={className}
+    >
+      {children}
+    </motion.a>
+  )
+}
+
+export default function Hero({ theme, toggleTheme }: Props) {
+  const reduced = useReducedMotion()
 
   return (
     <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-14">
-      {/* Background blobs */}
+      {/* Noise texture */}
+      <svg className="hidden" aria-hidden="true">
+        <defs>
+          <filter id="hero-noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+            <feColorMatrix type="saturate" values="0" />
+          </filter>
+        </defs>
+      </svg>
+      <div className="absolute inset-0 pointer-events-none" style={{ filter: 'url(#hero-noise)', opacity: 0.035 }} />
+
+      {/* Drifting blobs */}
       <motion.div
-        className="absolute top-1/4 -left-40 w-96 h-96 rounded-full opacity-20 blur-3xl pointer-events-none"
-        style={{ background: 'var(--accent)', y: blobY }}
+        className="absolute top-1/4 -left-40 w-96 h-96 rounded-full blur-3xl pointer-events-none"
+        style={{ background: 'var(--accent)', opacity: 0.15 }}
+        animate={reduced ? {} : { x: [0, 30, -20, 0], y: [0, -20, 30, 0] }}
+        transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
       />
       <motion.div
-        className="absolute bottom-1/4 -right-40 w-80 h-80 rounded-full opacity-10 blur-3xl pointer-events-none"
-        style={{ background: 'var(--accent)' }}
+        className="absolute bottom-1/4 -right-40 w-80 h-80 rounded-full blur-3xl pointer-events-none"
+        style={{ background: 'var(--accent)', opacity: 0.08 }}
+        animate={reduced ? {} : { x: [0, -25, 20, 0], y: [0, 20, -30, 0] }}
+        transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
       />
 
       <motion.div
@@ -32,25 +153,20 @@ export default function Hero({ theme, toggleTheme }: Props) {
         initial="hidden"
         animate="visible"
       >
-        <motion.div variants={fadeUp} className="mb-4">
-          <span
-            className="inline-block px-3 py-1 rounded-full text-xs font-mono font-medium border"
-            style={{ borderColor: 'var(--accent)', color: 'var(--accent)', background: 'color-mix(in srgb, var(--accent) 10%, transparent)' }}
-          >
-            VP Engineering · Goldman Sachs
-          </span>
-        </motion.div>
-
         <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight mb-4">
-          {profile.name}
+          <span className="text-shimmer">{profile.name}</span>
         </motion.h1>
+
+        <motion.div variants={fadeUp} className="mb-4">
+          <TypewriterBadge />
+        </motion.div>
 
         <motion.p variants={fadeUp} className="text-lg sm:text-xl text-muted max-w-xl mx-auto mb-8 leading-relaxed">
           {profile.tagline}
         </motion.p>
 
         <motion.div variants={fadeUp} className="flex flex-wrap items-center justify-center gap-3">
-          <a
+          <MagneticButton
             href={profile.resume}
             target="_blank"
             rel="noopener noreferrer"
@@ -59,8 +175,8 @@ export default function Hero({ theme, toggleTheme }: Props) {
           >
             <FileText size={15} />
             Resume
-          </a>
-          <a
+          </MagneticButton>
+          <MagneticButton
             href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
@@ -68,8 +184,8 @@ export default function Hero({ theme, toggleTheme }: Props) {
           >
             <Github size={15} />
             GitHub
-          </a>
-          <a
+          </MagneticButton>
+          <MagneticButton
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
@@ -77,7 +193,7 @@ export default function Hero({ theme, toggleTheme }: Props) {
           >
             <Linkedin size={15} />
             LinkedIn
-          </a>
+          </MagneticButton>
           <ThemeToggle theme={theme} toggle={toggleTheme} />
         </motion.div>
       </motion.div>
