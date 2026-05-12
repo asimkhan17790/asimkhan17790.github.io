@@ -134,6 +134,25 @@ export default function Hero({ theme, toggleTheme }: Props) {
       </svg>
       <div className="absolute inset-0 pointer-events-none" style={{ filter: 'url(#hero-noise)', opacity: 0.035 }} />
 
+      {/* Ghost photo background */}
+      <motion.div
+        className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: 'url(/asim_image.jpg)', backgroundPosition: 'center 20%', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.2 }}
+        transition={reduced ? { duration: 0 } : { duration: 1.4, ease: 'easeOut', delay: 0.4 }}
+      />
+      {/* Radial vignette — fades photo edges into background */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse 65% 65% at 50% 38%, transparent 0%, var(--bg) 72%)' }}
+      />
+      {/* Bottom fade — prevents bleed into next section */}
+      <div
+        className="absolute bottom-0 left-0 right-0 pointer-events-none"
+        style={{ height: '200px', background: 'linear-gradient(to bottom, transparent, var(--bg))' }}
+      />
+
       {/* Drifting blobs */}
       <motion.div
         className="absolute top-1/4 -left-40 w-96 h-96 rounded-full blur-3xl pointer-events-none"
