@@ -29,11 +29,11 @@ export default function Contact() {
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
-  type LinkItem = { label: string; value: string; href: string; icon: React.ElementType; action: (() => void) | null }
+  type LinkItem = { label: string; value: string; href: string; icon: React.ElementType; action: (() => void) | null; brandColor: string }
   const links: LinkItem[] = [
-    { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail, action: copyEmail },
-    { label: 'LinkedIn', value: 'linkedin.com/in/asimkhan17', href: profile.linkedin, icon: LinkedInLogo, action: null },
-    { label: 'GitHub', value: 'github.com/asimkhan17790', href: profile.github, icon: GitHubLogo, action: null },
+    { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail, action: copyEmail, brandColor: '#0078D4' },
+    { label: 'LinkedIn', value: 'linkedin.com/in/asimkhan17', href: profile.linkedin, icon: LinkedInLogo, action: null, brandColor: '#0A66C2' },
+    { label: 'GitHub', value: 'github.com/asimkhan17790', href: profile.github, icon: GitHubLogo, action: null, brandColor: '#181717' },
   ]
   return (
     <section id="contact" className="py-20 px-6 max-w-5xl mx-auto">
@@ -50,8 +50,8 @@ export default function Contact() {
             <motion.div key={link.label} variants={scaleIn}>
               <a href={link.href} target={link.href.startsWith('mailto') ? undefined : '_blank'} rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-3.5 rounded-xl border border-color hover:opacity-80 transition-all"
-                style={{ background: 'var(--card)' }}>
-                <link.icon size={16} style={{ color: 'var(--accent)' }} />
+                style={{ background: 'var(--card)', borderLeftColor: link.brandColor, borderLeftWidth: '3px' }}>
+                <link.icon size={16} style={{ color: link.brandColor }} />
                 <div className="text-left">
                   <div className="text-xs text-muted">{link.label}</div>
                   <div className="text-sm font-medium">{link.value}</div>
