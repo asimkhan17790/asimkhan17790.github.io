@@ -172,7 +172,7 @@ export default function Hero({ theme, toggleTheme }: Props) {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-white transition-opacity hover:opacity-90"
-            style={{ background: 'var(--accent)' }}
+            style={{ background: '#2C2C2C' }}
           >
             <FileText size={15} />
             Resume

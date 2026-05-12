@@ -33,7 +33,7 @@ export default function Contact() {
   const links: LinkItem[] = [
     { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail, action: copyEmail, brandColor: '#0078D4' },
     { label: 'LinkedIn', value: 'linkedin.com/in/asimkhan17', href: profile.linkedin, icon: LinkedInLogo, action: null, brandColor: '#0A66C2' },
-    { label: 'GitHub', value: 'github.com/asimkhan17790', href: profile.github, icon: GitHubLogo, action: null, brandColor: '#181717' },
+    { label: 'GitHub', value: 'github.com/asimkhan17790', href: profile.github, icon: GitHubLogo, action: null, brandColor: '#6e7681' },
   ]
   return (
     <section id="contact" className="py-20 px-6 max-w-5xl mx-auto">
@@ -51,8 +51,8 @@ export default function Contact() {
               <a href={link.href} target={link.href.startsWith('mailto') ? undefined : '_blank'} rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-3.5 rounded-xl border border-color hover:opacity-80 transition-all"
                 style={{ background: 'var(--card)' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-lg flex-shrink-0" style={{ background: link.brandColor }}>
-                  <link.icon size={15} style={{ color: '#fff' }} />
+                <span style={{ background: `${link.brandColor}22`, borderRadius: '8px', padding: '7px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <link.icon size={15} style={{ color: link.brandColor }} />
                 </span>
                 <div className="text-left">
                   <div className="text-xs text-muted">{link.label}</div>
