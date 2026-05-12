@@ -178,16 +178,6 @@ export default function Hero({ theme, toggleTheme }: Props) {
             Resume
           </MagneticButton>
           <MagneticButton
-            href={profile.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-white transition-opacity hover:opacity-90"
-            style={{ background: '#181717' }}
-          >
-            <Github size={15} />
-            GitHub
-          </MagneticButton>
-          <MagneticButton
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
@@ -196,6 +186,16 @@ export default function Hero({ theme, toggleTheme }: Props) {
           >
             <Linkedin size={15} />
             LinkedIn
+          </MagneticButton>
+          <MagneticButton
+            href={profile.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-white transition-opacity hover:opacity-90"
+            style={{ background: '#181717' }}
+          >
+            <Github size={15} />
+            GitHub
           </MagneticButton>
           <ThemeToggle theme={theme} toggle={toggleTheme} />
         </motion.div>
