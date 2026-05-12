@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option B — Ghost Background Preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #111; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+  .label-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: #000000cc; backdrop-filter: blur(8px);
+    padding: 10px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid #333;
+  }
+  .label-bar span { color: #9ca3af; font-size: 13px; }
+  .label-bar strong { color: #fff; }
+
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+    background: #18181B;
+    padding-top: 48px;
+  }
+
+  .hero-img-bg {
+    position: absolute; inset: 0;
+    background: url('/asim_image.jpg') center 20%/cover no-repeat;
+    opacity: 0;
+    animation: fadeInImg 1.2s ease 0.3s forwards;
+  }
+  @keyframes fadeInImg { to { opacity: 0.2; } }
+
+  .hero-vignette {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 70% at 50% 40%, transparent 0%, #18181B 75%);
+  }
+
+  .hero-bottom-fade {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 160px;
+    background: linear-gradient(to bottom, transparent, #18181B);
+  }
+
+  .blob {
+    position: absolute; border-radius: 50%; pointer-events: none;
+    background: #D1D5DB; filter: blur(80px);
+  }
+  .blob-1 { width: 380px; height: 380px; top: 25%; left: -100px; opacity: 0.12; animation: drift1 12s ease-in-out infinite; }
+  .blob-2 { width: 300px; height: 300px; bottom: 25%; right: -100px; opacity: 0.07; animation: drift2 10s ease-in-out infinite; }
+  @keyframes drift1 { 0%,100%{transform:translate(0,0)} 33%{transform:translate(30px,-20px)} 66%{transform:translate(-20px,30px)} }
+  @keyframes drift2 { 0%,100%{transform:translate(0,0)} 33%{transform:translate(-25px,20px)} 66%{transform:translate(20px,-30px)} }
+
+  .hero-content {
+    position: relative; z-index: 10;
+    text-align: center; max-width: 680px; padding: 0 24px;
+    animation: riseIn 0.8s ease 0.2s both;
+  }
+  @keyframes riseIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+  h1 {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 700; letter-spacing: -2px; line-height: 1;
+    color: transparent;
+    background: linear-gradient(135deg, #fff 0%, #9ca3af 50%, #fff 100%);
+    background-size: 300% 100%;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 4s linear infinite;
+    margin-bottom: 20px;
+  }
+  @keyframes shimmer { 0%{background-position:200% center} 100%{background-position:-200% center} }
+
+  .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 6px 20px; border-radius: 999px;
+    border: 1px solid #374151; color: #374151;
+    font-family: monospace; font-size: 14px; font-weight: 500;
+    min-width: 260px; margin-bottom: 20px;
+  }
+  .badge .muted { opacity: 0.6; margin-right: 4px; }
+  .badge .typed { color: #4f93ff; }
+  .badge .cursor { display: inline-block; width: 1px; height: 14px; background: #4f93ff; margin-left: 2px; vertical-align: middle; animation: blink 1s step-end infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+  .tagline { color: #6b7280; font-size: 18px; margin-bottom: 36px; line-height: 1.6; }
+
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; text-decoration: none; transition: opacity 0.2s; }
+  .btn:hover { opacity: 0.85; }
+  .btn-resume { background: #374151; color: #fff; }
+  .btn-github { background: #181717; color: #fff; }
+  .btn-linkedin { background: #0A66C2; color: #fff; }
+  .btn-toggle { background: transparent; border: 1px solid #374151; color: #9ca3af; width: 40px; height: 40px; padding: 0; justify-content: center; border-radius: 8px; }
+
+  .scroll-hint { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); color: #6b7280; font-size: 22px; animation: bounce 2s ease-in-out infinite; z-index: 10; }
+  @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+
+  .note { position: fixed; bottom: 20px; right: 20px; z-index: 200; background: #27272A; border: 1px solid #374151; border-radius: 10px; padding: 12px 16px; max-width: 240px; color: #9ca3af; font-size: 12px; line-height: 1.5; }
+  .note strong { color: #fff; display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<div class="label-bar">
+  <span><strong>Option B</strong> — Ghost Background · full mockup</span>
+  <span>dark mode</span>
+</div>
+
+<section class="hero">
+  <div class="hero-img-bg"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-bottom-fade"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="hero-content">
+    <h1>Asim Khan</h1>
+    <div class="badge">
+      <span class="muted">I am&nbsp;</span>
+      <span class="typed">Techie</span>
+      <span class="cursor"></span>
+    </div>
+    <p class="tagline">while (alive) { learn(); build(); inspire(); }</p>
+    <div class="buttons">
+      <a href="#" class="btn btn-resume">&#128196; Resume</a>
+      <a href="#" class="btn btn-github">⌥ GitHub</a>
+      <a href="#" class="btn btn-linkedin">in LinkedIn</a>
+      <button class="btn btn-toggle">☽</button>
+    </div>
+  </div>
+
+  <div class="scroll-hint">∨</div>
+</section>
+
+<div class="note">
+  <strong>What you're seeing</strong>
+  Your photo fades in at 20% opacity. Radial vignette eats the edges into the background. Existing blobs layer on top. Nothing else changes.
+</div>
+
+</body>
+</html>
