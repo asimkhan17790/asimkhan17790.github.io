@@ -134,7 +134,6 @@ export default function Hero({ theme, toggleTheme }: Props) {
       </svg>
       <div className="absolute inset-0 pointer-events-none" style={{ filter: 'url(#hero-noise)', opacity: 0.035 }} />
 
-
       {/* Drifting blobs */}
       <motion.div
         className="absolute top-1/4 -left-40 w-96 h-96 rounded-full blur-3xl pointer-events-none"

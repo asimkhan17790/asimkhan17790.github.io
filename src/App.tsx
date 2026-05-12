@@ -1,5 +1,6 @@
 import { useTheme } from './hooks/useTheme'
 import { useActiveSection } from './hooks/useActiveSection'
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
 import Nav from './components/Nav'
 import ScrollProgress from './components/ScrollProgress'
 import Hero from './components/Hero'
@@ -10,9 +11,38 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import ScrollBackground from './components/ScrollBackground'
 
 const SECTIONS = ['hero', 'about', 'experience', 'skills', 'projects', 'education', 'contact']
+
+function ParallaxBackground() {
+  const reduced = useReducedMotion()
+  const { scrollY } = useScroll()
+  const y = useTransform(scrollY, [0, 5000], [0, -320])
+
+  return (
+    <>
+      <motion.div
+        className="fixed inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'url(/asim_image.jpg)',
+          backgroundPosition: 'center 15%',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          y: reduced ? 0 : y,
+          opacity: 0.13,
+          zIndex: 0,
+        }}
+      />
+      <div
+        className="fixed inset-0 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse 75% 70% at 50% 35%, transparent 0%, var(--bg) 78%)',
+          zIndex: 0,
+        }}
+      />
+    </>
+  )
+}
 
 export default function App() {
   const { theme, toggle } = useTheme()
@@ -20,10 +50,10 @@ export default function App() {
 
   return (
     <>
-      <ScrollBackground />
+      <ParallaxBackground />
       <ScrollProgress />
       <Nav active={active} theme={theme} toggleTheme={toggle} />
-      <main>
+      <main style={{ position: 'relative', zIndex: 1 }}>
         <Hero theme={theme} toggleTheme={toggle} />
         <About />
         <Experience />
