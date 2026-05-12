@@ -50,8 +50,10 @@ export default function Contact() {
             <motion.div key={link.label} variants={scaleIn}>
               <a href={link.href} target={link.href.startsWith('mailto') ? undefined : '_blank'} rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-3.5 rounded-xl border border-color hover:opacity-80 transition-all"
-                style={{ background: 'var(--card)', borderLeftColor: link.brandColor, borderLeftWidth: '3px' }}>
-                <link.icon size={16} style={{ color: link.brandColor }} />
+                style={{ background: 'var(--card)' }}>
+                <span className="flex items-center justify-center w-8 h-8 rounded-lg flex-shrink-0" style={{ background: link.brandColor }}>
+                  <link.icon size={15} style={{ color: '#fff' }} />
+                </span>
                 <div className="text-left">
                   <div className="text-xs text-muted">{link.label}</div>
                   <div className="text-sm font-medium">{link.value}</div>
