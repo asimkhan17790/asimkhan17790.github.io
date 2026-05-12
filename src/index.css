@@ -28,7 +28,7 @@
   }
 
   body {
-    background-color: transparent;
+    background-color: var(--bg);
     color: var(--fg);
     font-family: 'Inter', system-ui, sans-serif;
     transition: background-color 0.2s ease, color 0.2s ease;
