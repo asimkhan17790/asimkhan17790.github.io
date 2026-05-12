@@ -181,7 +181,8 @@ export default function Hero({ theme, toggleTheme }: Props) {
             href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm border border-color hover:bg-card transition-colors"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-white transition-opacity hover:opacity-90"
+            style={{ background: '#181717' }}
           >
             <Github size={15} />
             GitHub
@@ -190,7 +191,8 @@ export default function Hero({ theme, toggleTheme }: Props) {
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm border border-color hover:bg-card transition-colors"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-white transition-opacity hover:opacity-90"
+            style={{ background: '#0A66C2' }}
           >
             <Linkedin size={15} />
             LinkedIn
