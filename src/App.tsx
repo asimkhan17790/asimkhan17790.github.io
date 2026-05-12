@@ -10,6 +10,7 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ScrollBackground from './components/ScrollBackground'
 
 const SECTIONS = ['hero', 'about', 'experience', 'skills', 'projects', 'education', 'contact']
 
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <>
+      <ScrollBackground />
       <ScrollProgress />
       <Nav active={active} theme={theme} toggleTheme={toggle} />
       <main>
