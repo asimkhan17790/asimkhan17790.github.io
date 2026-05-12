@@ -62,7 +62,9 @@ export default function App() {
         <Education />
         <Contact />
       </main>
-      <Footer theme={theme} toggleTheme={toggle} />
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <Footer theme={theme} toggleTheme={toggle} />
+      </div>
     </>
   )
 }
