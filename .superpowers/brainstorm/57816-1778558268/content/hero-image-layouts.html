@@ -1,0 +1,128 @@
+<h2>How should asim_image.jpg appear in the Hero?</h2>
+<p class="subtitle">3 approaches — all blend the image into the UI with animations</p>
+
+<style>
+  .preview-box {
+    background: #18181B;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .fake-name { color: #fff; font-size: 22px; font-weight: 700; letter-spacing: -0.5px; }
+  .fake-sub { color: #9ca3af; font-size: 11px; margin-top: 4px; }
+  .fake-btn { background: #374151; color: #fff; border-radius: 6px; padding: 5px 12px; font-size: 10px; margin-top: 10px; display: inline-block; }
+
+  /* Option A: Split */
+  .split-preview { display: flex; width: 100%; height: 100%; }
+  .split-left { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 24px; }
+  .split-right { width: 45%; position: relative; overflow: hidden; }
+  .split-right-img {
+    width: 100%; height: 100%;
+    background: url('/asim_image.jpg') center/cover no-repeat;
+  }
+  .split-fade { position: absolute; inset: 0; background: linear-gradient(to right, #18181B 0%, transparent 60%); }
+
+  /* Option B: Background wash */
+  .bg-preview {
+    position: relative; width: 100%; height: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .bg-img {
+    position: absolute; inset: 0;
+    background: url('/asim_image.jpg') center top/cover no-repeat;
+    opacity: 0.18;
+  }
+  .bg-overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 20%, #18181B 80%); }
+  .bg-content { position: relative; z-index: 1; text-align: center; }
+
+  /* Option C: Floating portrait */
+  .float-preview { display: flex; width: 100%; height: 100%; align-items: center; justify-content: center; gap: 28px; }
+  .float-text { text-align: left; }
+  .float-avatar {
+    width: 110px; height: 110px; border-radius: 50%;
+    background: url('/asim_image.jpg') center/cover no-repeat;
+    border: 2px solid #374151;
+    box-shadow: 0 0 40px -5px #374151aa;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .float-blob {
+    position: absolute; inset: -12px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #37415160 0%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite alternate;
+  }
+  @keyframes pulse { from { transform: scale(1); opacity: 0.6; } to { transform: scale(1.15); opacity: 1; } }
+</style>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="preview-box">
+        <div class="split-preview">
+          <div class="split-left">
+            <div class="fake-name">Asim Khan</div>
+            <div class="fake-sub">while (alive) { learn(); build(); }</div>
+            <div class="fake-btn">Resume →</div>
+          </div>
+          <div class="split-right">
+            <div class="split-right-img"></div>
+            <div class="split-fade"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Split Screen Bleed</h3>
+      <p>Image fills right half of hero, fades into background on the left edge. Text left-aligned. Editorial feel. Image slides in on load.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="preview-box">
+        <div class="bg-preview">
+          <div class="bg-img"></div>
+          <div class="bg-overlay"></div>
+          <div class="bg-content">
+            <div class="fake-name">Asim Khan</div>
+            <div class="fake-sub">while (alive) { learn(); build(); }</div>
+            <div class="fake-btn">Resume →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Ghost Background</h3>
+      <p>Low-opacity image wash behind the entire hero, fading out at edges via radial gradient. Existing blobs and noise overlay on top. Text stays centered. Very subtle.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="preview-box">
+        <div class="float-preview">
+          <div class="float-avatar">
+            <div class="float-blob"></div>
+          </div>
+          <div class="float-text">
+            <div class="fake-name">Asim Khan</div>
+            <div class="fake-sub">while (alive) {<br>  learn(); build();<br>}</div>
+            <div class="fake-btn">Resume →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Floating Portrait + Glow</h3>
+      <p>Circular avatar beside the text. Accent glow blob pulses behind it, matching existing blob animations. Spring scale-in on load. Most personal — face front and center.</p>
+    </div>
+  </div>
+
+</div>
