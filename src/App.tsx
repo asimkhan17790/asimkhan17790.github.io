@@ -22,20 +22,28 @@ function ParallaxBackground() {
   return (
     <>
       <motion.div
-        className="fixed inset-0 pointer-events-none"
+        className="fixed pointer-events-none"
         style={{
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: -320,
           backgroundImage: 'url(/asim_image.jpg)',
           backgroundPosition: 'center 15%',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           y: reduced ? 0 : y,
-          opacity: 0.13,
+          opacity: 0.22,
           zIndex: 0,
         }}
       />
       <div
-        className="fixed inset-0 pointer-events-none"
+        className="fixed pointer-events-none"
         style={{
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: -320,
           background: 'radial-gradient(ellipse 75% 70% at 50% 35%, transparent 0%, var(--bg) 78%)',
           zIndex: 0,
         }}

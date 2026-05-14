@@ -122,7 +122,7 @@ export default function Hero({ theme, toggleTheme }: Props) {
   const reduced = useReducedMotion()
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-14">
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center pt-14">
       {/* Noise texture */}
       <svg className="hidden" aria-hidden="true">
         <defs>
@@ -134,19 +134,6 @@ export default function Hero({ theme, toggleTheme }: Props) {
       </svg>
       <div className="absolute inset-0 pointer-events-none" style={{ filter: 'url(#hero-noise)', opacity: 0.035 }} />
 
-      {/* Drifting blobs */}
-      <motion.div
-        className="absolute top-1/4 -left-40 w-96 h-96 rounded-full blur-3xl pointer-events-none"
-        style={{ background: 'var(--accent)', opacity: 0.15 }}
-        animate={reduced ? {} : { x: [0, 30, -20, 0], y: [0, -20, 30, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-      />
-      <motion.div
-        className="absolute bottom-1/4 -right-40 w-80 h-80 rounded-full blur-3xl pointer-events-none"
-        style={{ background: 'var(--accent)', opacity: 0.08 }}
-        animate={reduced ? {} : { x: [0, -25, 20, 0], y: [0, 20, -30, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
-      />
 
       <motion.div
         className="relative z-10 text-center max-w-3xl mx-auto px-6"
