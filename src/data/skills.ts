@@ -10,15 +10,15 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Web & Frontend',
-    skills: ['React', 'Angular', 'Redux', 'Node.js', 'CSS', 'Bootstrap', 'jQuery'],
+    skills: ['React', 'Angular', 'Redux', 'Node.js'],
   },
   {
     category: 'Frameworks & Backend',
-    skills: ['Spring', 'Spring Boot', 'Spring Batch', 'J2EE', 'REST', 'Hibernate', 'Mockito'],
+    skills: ['Spring', 'Flutter', 'J2EE', 'REST', 'Hibernate', 'Mockito'],
   },
   {
     category: 'Big Data',
-    skills: ['Hadoop', 'MapReduce', 'Apache Spark', 'AWS Glue', 'AWS EMR'],
+    skills: ['Hadoop', 'MapReduce', 'Apache Spark'],
   },
   {
     category: 'Databases',
@@ -26,10 +26,10 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Cloud & DevOps',
-    skills: ['AWS S3', 'AWS Lambda', 'AWS EC2', 'AWS Glue', 'CloudFormation'],
+    skills: ['AWS'],
   },
   {
-    category: 'AI Tools',
-    skills: ['Claude Code', 'GitHub Copilot', 'Cursor', 'Devin'],
+    category: 'AI Tools & Frameworks',
+    skills: ['Claude Code', 'GitHub Copilot', 'Cursor', 'Devin', 'LangChain'],
   },
 ]
