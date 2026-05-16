@@ -27,11 +27,7 @@ export default function Projects() {
       <motion.div variants={reduced ? fadeUp : staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.05 }}>
         <motion.p variants={fadeUp} className="text-xs font-mono uppercase tracking-widest mb-2" style={{ color: 'var(--accent)' }}>Projects</motion.p>
         <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-4">{"What I've built."}</motion.h2>
-        <motion.p variants={fadeUp} className="text-muted text-sm mb-8">
-          {"Public repos from "}
-          <a href="https://github.com/asimkhan17790" target="_blank" rel="noopener noreferrer"
-            className="underline underline-offset-2 hover:opacity-80" style={{ color: 'var(--accent)' }}>github.com/asimkhan17790</a>
-        </motion.p>
+
         {!loading && languages.length > 1 && (
           <motion.div variants={fadeUp} className="flex flex-wrap gap-2 mb-8">
             {languages.map(lang => (
