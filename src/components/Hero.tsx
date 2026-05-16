@@ -132,7 +132,7 @@ export default function Hero({ theme, toggleTheme }: Props) {
           </filter>
         </defs>
       </svg>
-      <div className="absolute inset-0 pointer-events-none" style={{ filter: 'url(#hero-noise)', opacity: 0.035 }} />
+      <div className="fixed inset-0 pointer-events-none" style={{ filter: 'url(#hero-noise)', opacity: 0.035 }} />
 
 
       <motion.div
