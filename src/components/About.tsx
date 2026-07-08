@@ -4,6 +4,8 @@ import { profile } from '../data/profile'
 import { fadeUp, slideInLeft } from '../lib/motion'
 import { projects } from '../data/projects'
 import { LANG_COLORS } from '../lib/langColors'
+import { useTilt } from '../hooks/useTilt'
+import SectionHeading from './SectionHeading'
 
 const flashCard = {
   hidden: { opacity: 0, y: 52, scale: 0.8, filter: 'brightness(2)' },
@@ -25,6 +27,7 @@ const flashCard = {
 function ProjectCard({ name, description, url, language, index, inView }: {
   name: string; description: string; url: string; language: string; index: number; inView: boolean
 }) {
+  const tilt = useTilt(8)
   return (
     <motion.a
       href={url}
@@ -35,8 +38,10 @@ function ProjectCard({ name, description, url, language, index, inView }: {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       whileHover={{ y: -5, scale: 1.04, transition: { type: 'spring', stiffness: 400, damping: 18 } }}
-      className="rounded-xl p-5 border border-color flex flex-col gap-2"
-      style={{ background: 'var(--card)' }}
+      onMouseMove={tilt.onMouseMove}
+      onMouseLeave={tilt.onMouseLeave}
+      className="spotlight-card rounded-xl p-5 border border-color flex flex-col gap-2"
+      style={{ background: 'var(--card)', ...tilt.style }}
     >
       <div className="font-semibold text-sm leading-snug">{name}</div>
       <div className="text-xs text-muted leading-relaxed flex-1">{description}</div>
@@ -62,10 +67,7 @@ export default function About() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <p className="text-xs font-mono uppercase tracking-widest mb-3" style={{ color: 'var(--accent)' }}>
-            About
-          </p>
-          <h2 className="text-3xl font-bold mb-6">Building systems that scale.</h2>
+          <SectionHeading eyebrow="About" title="Building systems that scale." className="mb-6" />
           <p className="text-muted leading-relaxed">{profile.bio}</p>
         </motion.div>
 

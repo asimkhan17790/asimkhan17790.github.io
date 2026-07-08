@@ -1,42 +1,28 @@
-import { useRef } from 'react'
-import { motion, useMotionValue, useSpring } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Star, ExternalLink, Code } from 'lucide-react'
 import { scaleIn } from '../lib/motion'
 import { LANG_COLORS } from '../lib/langColors'
+import { useTilt } from '../hooks/useTilt'
 import type { GithubRepo } from '../hooks/useGithubRepos'
 
 interface Props { repo: GithubRepo }
 
 export default function RepoCard({ repo }: Props) {
-  const ref = useRef<HTMLAnchorElement>(null)
-  const rotX = useMotionValue(0)
-  const rotY = useMotionValue(0)
-  const sRotX = useSpring(rotX, { stiffness: 150, damping: 20 })
-  const sRotY = useSpring(rotY, { stiffness: 150, damping: 20 })
-
-  function onMouseMove(e: { clientX: number; clientY: number }) {
-    if (!ref.current) return
-    const r = ref.current.getBoundingClientRect()
-    rotX.set(((e.clientY - r.top - r.height / 2) / (r.height / 2)) * -7)
-    rotY.set(((e.clientX - r.left - r.width / 2) / (r.width / 2)) * 7)
-  }
-
-  function onMouseLeave() { rotX.set(0); rotY.set(0) }
-
+  const tilt = useTilt(8)
   const updated = new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
 
   return (
     <motion.a
-      ref={ref}
       href={repo.html_url}
       target="_blank"
       rel="noopener noreferrer"
       variants={scaleIn}
-      style={{ transformPerspective: 800, rotateX: sRotX, rotateY: sRotY, background: 'var(--card)' }}
-      onMouseMove={onMouseMove}
-      onMouseLeave={onMouseLeave}
-      className="block rounded-xl p-5 border border-color h-full"
+      style={{ background: 'var(--card)', ...tilt.style }}
+      onMouseMove={tilt.onMouseMove}
+      onMouseLeave={tilt.onMouseLeave}
+      className="spotlight-card block rounded-xl p-5 border border-color h-full"
     >
+      <motion.div style={{ z: 24 }}>
       <div className="flex items-start justify-between gap-2 mb-3">
         <div className="flex items-center gap-2 min-w-0">
           <Code size={14} style={{ color: 'var(--accent)', flexShrink: 0 }} />
@@ -55,6 +41,7 @@ export default function RepoCard({ repo }: Props) {
         {repo.stargazers_count > 0 && <span className="flex items-center gap-1"><Star size={11} />{repo.stargazers_count}</span>}
         <span className="ml-auto">{updated}</span>
       </div>
+      </motion.div>
     </motion.a>
   )
 }

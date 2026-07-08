@@ -109,20 +109,11 @@
     {
       "label": "App.tsx",
       "file_type": "code",
-      "source_file": "src/App.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/App.tsx",
       "source_location": "L1",
-      "id": "src_app_tsx",
-      "community": 5,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_app_tsx",
+      "community": 23,
       "norm_label": "app.tsx"
-    },
-    {
-      "label": "ParallaxBackground()",
-      "file_type": "code",
-      "source_file": "src/App.tsx",
-      "source_location": "L17",
-      "id": "app_parallaxbackground",
-      "community": 5,
-      "norm_label": "parallaxbackground()"
     },
     {
       "label": "main.tsx",
@@ -130,7 +121,7 @@
       "source_file": "src/main.tsx",
       "source_location": "L1",
       "id": "src_main_tsx",
-      "community": 23,
+      "community": 24,
       "norm_label": "main.tsx"
     },
     {
@@ -139,43 +130,43 @@
       "source_file": "src/vite-env.d.ts",
       "source_location": "L1",
       "id": "src_vite_env_d_ts",
-      "community": 24,
+      "community": 25,
       "norm_label": "vite-env.d.ts"
     },
     {
       "label": "Projects.tsx",
       "file_type": "code",
-      "source_file": "src/components/Projects.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Projects.tsx",
       "source_location": "L1",
-      "id": "src_components_projects_tsx",
-      "community": 25,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_projects_tsx",
+      "community": 26,
       "norm_label": "projects.tsx"
     },
     {
       "label": "Hero.tsx",
       "file_type": "code",
-      "source_file": "src/components/Hero.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
       "source_location": "L1",
-      "id": "src_components_hero_tsx",
-      "community": 2,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_hero_tsx",
+      "community": 3,
       "norm_label": "hero.tsx"
     },
     {
       "label": "onMove()",
       "file_type": "code",
-      "source_file": "src/components/Hero.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
       "source_location": "L96",
       "id": "hero_onmove",
-      "community": 2,
+      "community": 3,
       "norm_label": "onmove()"
     },
     {
       "label": "onLeave()",
       "file_type": "code",
-      "source_file": "src/components/Hero.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
       "source_location": "L103",
       "id": "hero_onleave",
-      "community": 2,
+      "community": 3,
       "norm_label": "onleave()"
     },
     {
@@ -184,16 +175,16 @@
       "source_file": "src/components/Nav.tsx",
       "source_location": "L1",
       "id": "src_components_nav_tsx",
-      "community": 26,
+      "community": 27,
       "norm_label": "nav.tsx"
     },
     {
       "label": "Experience.tsx",
       "file_type": "code",
-      "source_file": "src/components/Experience.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Experience.tsx",
       "source_location": "L1",
-      "id": "src_components_experience_tsx",
-      "community": 27,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_experience_tsx",
+      "community": 28,
       "norm_label": "experience.tsx"
     },
     {
@@ -202,7 +193,7 @@
       "source_file": "src/components/LogoBadge.tsx",
       "source_location": "L1",
       "id": "src_components_logobadge_tsx",
-      "community": 6,
+      "community": 5,
       "norm_label": "logobadge.tsx"
     },
     {
@@ -211,35 +202,17 @@
       "source_file": "src/components/LogoBadge.tsx",
       "source_location": "L6",
       "id": "logobadge_logobadge",
-      "community": 6,
+      "community": 5,
       "norm_label": "logobadge()"
     },
     {
       "label": "RepoCard.tsx",
       "file_type": "code",
-      "source_file": "src/components/RepoCard.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/RepoCard.tsx",
       "source_location": "L1",
-      "id": "src_components_repocard_tsx",
-      "community": 3,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_repocard_tsx",
+      "community": 29,
       "norm_label": "repocard.tsx"
-    },
-    {
-      "label": "onMouseMove()",
-      "file_type": "code",
-      "source_file": "src/components/RepoCard.tsx",
-      "source_location": "L17",
-      "id": "repocard_onmousemove",
-      "community": 3,
-      "norm_label": "onmousemove()"
-    },
-    {
-      "label": "onMouseLeave()",
-      "file_type": "code",
-      "source_file": "src/components/RepoCard.tsx",
-      "source_location": "L24",
-      "id": "repocard_onmouseleave",
-      "community": 3,
-      "norm_label": "onmouseleave()"
     },
     {
       "label": "SkillBadge.tsx",
@@ -247,7 +220,7 @@
       "source_file": "src/components/SkillBadge.tsx",
       "source_location": "L1",
       "id": "src_components_skillbadge_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "skillbadge.tsx"
     },
     {
@@ -256,43 +229,70 @@
       "source_file": "src/components/SkillBadge.tsx",
       "source_location": "L8",
       "id": "skillbadge_skillbadge",
-      "community": 7,
+      "community": 6,
       "norm_label": "skillbadge()"
     },
     {
       "label": "ScrollProgress.tsx",
       "file_type": "code",
-      "source_file": "src/components/ScrollProgress.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ScrollProgress.tsx",
       "source_location": "L1",
-      "id": "src_components_scrollprogress_tsx",
-      "community": 8,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_scrollprogress_tsx",
+      "community": 7,
       "norm_label": "scrollprogress.tsx"
     },
     {
       "label": "ScrollProgress()",
       "file_type": "code",
-      "source_file": "src/components/ScrollProgress.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ScrollProgress.tsx",
       "source_location": "L3",
       "id": "scrollprogress_scrollprogress",
-      "community": 8,
+      "community": 7,
       "norm_label": "scrollprogress()"
+    },
+    {
+      "label": "IdeaStream.tsx",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/IdeaStream.tsx",
+      "source_location": "L1",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_ideastream_tsx",
+      "community": 8,
+      "norm_label": "ideastream.tsx"
+    },
+    {
+      "label": "IdeaStream()",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/IdeaStream.tsx",
+      "source_location": "L21",
+      "id": "ideastream_ideastream",
+      "community": 8,
+      "norm_label": "ideastream()"
     },
     {
       "label": "Contact.tsx",
       "file_type": "code",
-      "source_file": "src/components/Contact.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
       "source_location": "L1",
-      "id": "src_components_contact_tsx",
-      "community": 9,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_contact_tsx",
+      "community": 0,
       "norm_label": "contact.tsx"
+    },
+    {
+      "label": "ContactCard()",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
+      "source_location": "L28",
+      "id": "contact_contactcard",
+      "community": 0,
+      "norm_label": "contactcard()"
     },
     {
       "label": "copyEmail()",
       "file_type": "code",
-      "source_file": "src/components/Contact.tsx",
-      "source_location": "L27",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
+      "source_location": "L65",
       "id": "contact_copyemail",
-      "community": 9,
+      "community": 0,
       "norm_label": "copyemail()"
     },
     {
@@ -301,7 +301,7 @@
       "source_file": "src/components/Section.tsx",
       "source_location": "L1",
       "id": "src_components_section_tsx",
-      "community": 10,
+      "community": 9,
       "norm_label": "section.tsx"
     },
     {
@@ -310,8 +310,26 @@
       "source_file": "src/components/Section.tsx",
       "source_location": "L12",
       "id": "section_section",
-      "community": 10,
+      "community": 9,
       "norm_label": "section()"
+    },
+    {
+      "label": "SectionHeading.tsx",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/SectionHeading.tsx",
+      "source_location": "L1",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_sectionheading_tsx",
+      "community": 10,
+      "norm_label": "sectionheading.tsx"
+    },
+    {
+      "label": "SectionHeading()",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/SectionHeading.tsx",
+      "source_location": "L18",
+      "id": "sectionheading_sectionheading",
+      "community": 10,
+      "norm_label": "sectionheading()"
     },
     {
       "label": "Footer.tsx",
@@ -334,16 +352,16 @@
     {
       "label": "TimelineItem.tsx",
       "file_type": "code",
-      "source_file": "src/components/TimelineItem.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/TimelineItem.tsx",
       "source_location": "L1",
-      "id": "src_components_timelineitem_tsx",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_timelineitem_tsx",
       "community": 12,
       "norm_label": "timelineitem.tsx"
     },
     {
       "label": "TimelineItem()",
       "file_type": "code",
-      "source_file": "src/components/TimelineItem.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/TimelineItem.tsx",
       "source_location": "L10",
       "id": "timelineitem_timelineitem",
       "community": 12,
@@ -370,47 +388,74 @@
     {
       "label": "Skills.tsx",
       "file_type": "code",
-      "source_file": "src/components/Skills.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Skills.tsx",
       "source_location": "L1",
-      "id": "src_components_skills_tsx",
-      "community": 28,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_skills_tsx",
+      "community": 0,
       "norm_label": "skills.tsx"
+    },
+    {
+      "label": "SkillGroupCard()",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Skills.tsx",
+      "source_location": "L9",
+      "id": "skills_skillgroupcard",
+      "community": 0,
+      "norm_label": "skillgroupcard()"
     },
     {
       "label": "Education.tsx",
       "file_type": "code",
-      "source_file": "src/components/Education.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Education.tsx",
       "source_location": "L1",
-      "id": "src_components_education_tsx",
-      "community": 14,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_education_tsx",
+      "community": 0,
       "norm_label": "education.tsx"
     },
     {
-      "label": "Education()",
+      "label": "EduCard()",
       "file_type": "code",
-      "source_file": "src/components/Education.tsx",
-      "source_location": "L7",
-      "id": "education_education",
-      "community": 14,
-      "norm_label": "education()"
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Education.tsx",
+      "source_location": "L9",
+      "id": "education_educard",
+      "community": 0,
+      "norm_label": "educard()"
     },
     {
       "label": "About.tsx",
       "file_type": "code",
-      "source_file": "src/components/About.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/About.tsx",
       "source_location": "L1",
-      "id": "src_components_about_tsx",
-      "community": 15,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_about_tsx",
+      "community": 0,
       "norm_label": "about.tsx"
     },
     {
       "label": "ProjectCard()",
       "file_type": "code",
-      "source_file": "src/components/About.tsx",
-      "source_location": "L25",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/About.tsx",
+      "source_location": "L27",
       "id": "about_projectcard",
-      "community": 15,
+      "community": 0,
       "norm_label": "projectcard()"
+    },
+    {
+      "label": "VideoBackground.tsx",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/VideoBackground.tsx",
+      "source_location": "L1",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_videobackground_tsx",
+      "community": 14,
+      "norm_label": "videobackground.tsx"
+    },
+    {
+      "label": "tick()",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/VideoBackground.tsx",
+      "source_location": "L43",
+      "id": "videobackground_tick",
+      "community": 14,
+      "norm_label": "tick()"
     },
     {
       "label": "useGithubRepos.ts",
@@ -418,7 +463,7 @@
       "source_file": "src/hooks/useGithubRepos.ts",
       "source_location": "L1",
       "id": "src_hooks_usegithubrepos_ts",
-      "community": 16,
+      "community": 15,
       "norm_label": "usegithubrepos.ts"
     },
     {
@@ -427,8 +472,26 @@
       "source_file": "src/hooks/useGithubRepos.ts",
       "source_location": "L54",
       "id": "usegithubrepos_usegithubrepos",
-      "community": 16,
+      "community": 15,
       "norm_label": "usegithubrepos()"
+    },
+    {
+      "label": "useTilt.ts",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/hooks/useTilt.ts",
+      "source_location": "L1",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_hooks_usetilt_ts",
+      "community": 0,
+      "norm_label": "usetilt.ts"
+    },
+    {
+      "label": "useTilt()",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/hooks/useTilt.ts",
+      "source_location": "L7",
+      "id": "usetilt_usetilt",
+      "community": 0,
+      "norm_label": "usetilt()"
     },
     {
       "label": "useActiveSection.ts",
@@ -436,7 +499,7 @@
       "source_file": "src/hooks/useActiveSection.ts",
       "source_location": "L1",
       "id": "src_hooks_useactivesection_ts",
-      "community": 17,
+      "community": 16,
       "norm_label": "useactivesection.ts"
     },
     {
@@ -445,7 +508,7 @@
       "source_file": "src/hooks/useActiveSection.ts",
       "source_location": "L3",
       "id": "useactivesection_useactivesection",
-      "community": 17,
+      "community": 16,
       "norm_label": "useactivesection()"
     },
     {
@@ -454,7 +517,7 @@
       "source_file": "src/hooks/useTheme.ts",
       "source_location": "L1",
       "id": "src_hooks_usetheme_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "usetheme.ts"
     },
     {
@@ -463,7 +526,7 @@
       "source_file": "src/hooks/useTheme.ts",
       "source_location": "L5",
       "id": "usetheme_usetheme",
-      "community": 18,
+      "community": 17,
       "norm_label": "usetheme()"
     },
     {
@@ -472,7 +535,7 @@
       "source_file": "src/hooks/useCountUp.ts",
       "source_location": "L1",
       "id": "src_hooks_usecountup_ts",
-      "community": 19,
+      "community": 18,
       "norm_label": "usecountup.ts"
     },
     {
@@ -481,7 +544,7 @@
       "source_file": "src/hooks/useCountUp.ts",
       "source_location": "L4",
       "id": "usecountup_usecountup",
-      "community": 19,
+      "community": 18,
       "norm_label": "usecountup()"
     },
     {
@@ -490,7 +553,7 @@
       "source_file": "src/lib/langColors.ts",
       "source_location": "L1",
       "id": "src_lib_langcolors_ts",
-      "community": 29,
+      "community": 30,
       "norm_label": "langcolors.ts"
     },
     {
@@ -499,8 +562,26 @@
       "source_file": "src/lib/motion.ts",
       "source_location": "L1",
       "id": "src_lib_motion_ts",
-      "community": 30,
+      "community": 31,
       "norm_label": "motion.ts"
+    },
+    {
+      "label": "spotlight.ts",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/lib/spotlight.ts",
+      "source_location": "L1",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_lib_spotlight_ts",
+      "community": 19,
+      "norm_label": "spotlight.ts"
+    },
+    {
+      "label": "trackSpotlight()",
+      "file_type": "code",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/lib/spotlight.ts",
+      "source_location": "L4",
+      "id": "spotlight_trackspotlight",
+      "community": 19,
+      "norm_label": "trackspotlight()"
     },
     {
       "label": "projects.ts",
@@ -508,7 +589,7 @@
       "source_file": "src/data/projects.ts",
       "source_location": "L1",
       "id": "src_data_projects_ts",
-      "community": 31,
+      "community": 32,
       "norm_label": "projects.ts"
     },
     {
@@ -517,7 +598,7 @@
       "source_file": "src/data/education.ts",
       "source_location": "L1",
       "id": "src_data_education_ts",
-      "community": 32,
+      "community": 33,
       "norm_label": "education.ts"
     },
     {
@@ -526,7 +607,7 @@
       "source_file": "src/data/experience.ts",
       "source_location": "L1",
       "id": "src_data_experience_ts",
-      "community": 33,
+      "community": 34,
       "norm_label": "experience.ts"
     },
     {
@@ -535,7 +616,7 @@
       "source_file": "src/data/profile.ts",
       "source_location": "L1",
       "id": "src_data_profile_ts",
-      "community": 34,
+      "community": 35,
       "norm_label": "profile.ts"
     },
     {
@@ -544,7 +625,7 @@
       "source_file": "src/data/skills.ts",
       "source_location": "L1",
       "id": "src_data_skills_ts",
-      "community": 35,
+      "community": 36,
       "norm_label": "skills.ts"
     },
     {
@@ -556,7 +637,7 @@
       "captured_at": null,
       "author": "Asim Khan",
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "readme \u2014 portfolio project documentation",
       "id": "readme_portfolio"
     },
@@ -569,7 +650,7 @@
       "captured_at": null,
       "author": "Asim Khan",
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "claude.md \u2014 ai agent instructions",
       "id": "claude_md"
     },
@@ -595,7 +676,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "asim khan \u2014 engineering vice president",
       "id": "asim_khan_person"
     },
@@ -608,7 +689,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "goldman sachs \u2014 financial services organization",
       "id": "goldman_sachs_org"
     },
@@ -621,7 +702,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "goldman sachs logo",
       "id": "gs_logo"
     },
@@ -634,7 +715,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "accenture logo \u2014 blue arrow brand mark",
       "id": "accenture_logo"
     },
@@ -647,7 +728,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "citi (citibank) logo \u2014 blue and red brand mark",
       "id": "citi_logo"
     },
@@ -660,7 +741,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "nok nok labs logo \u2014 authentication technology company",
       "id": "noknok_logo"
     },
@@ -673,7 +754,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "dr. apj abdul kalam technical university logo \u2014 lucknow, uttar pradesh",
       "id": "aktu_logo"
     },
@@ -686,7 +767,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "northeastern university wordmark \u2014 notched-n brand mark",
       "id": "nu_wordmark"
     },
@@ -699,7 +780,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "favicon svg \u2014 ak monogram, matte graphite design",
       "id": "favicon_svg"
     },
@@ -725,7 +806,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "rgb mechanical keyboard \u2014 tech/developer aesthetic image",
       "id": "asim_image1_jpg"
     },
@@ -738,7 +819,7 @@
       "captured_at": null,
       "author": "Asim Khan",
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "asim khan resume pdf",
       "id": "asimkhan_pdf"
     },
@@ -751,7 +832,7 @@
       "captured_at": null,
       "author": "Asim Khan",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "linkedin profile pdf",
       "id": "linkedin_pdf"
     },
@@ -764,7 +845,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "react 18 \u2014 ui framework",
       "id": "tech_react"
     },
@@ -777,7 +858,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "typescript \u2014 type-safe language",
       "id": "tech_typescript"
     },
@@ -790,7 +871,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vite \u2014 build tool",
       "id": "tech_vite"
     },
@@ -803,7 +884,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "tailwind css \u2014 utility-first styling",
       "id": "tech_tailwind"
     },
@@ -816,7 +897,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "framer motion \u2014 animation library",
       "id": "tech_framer_motion"
     },
@@ -829,7 +910,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "github pages \u2014 deployment platform",
       "id": "tech_github_pages"
     },
@@ -855,7 +936,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "rationale: radial vignette + bottom gradient chosen to dissolve photo edges into dark ui without hard borders",
       "id": "rationale_vignette"
     },
@@ -868,7 +949,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 39,
       "norm_label": "rationale: all personal content in src/data/ for cms-free content updates without touching components",
       "id": "rationale_data_layer"
     }
@@ -877,36 +958,24 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_src": "src_app_tsx",
-      "_tgt": "app_parallaxbackground",
-      "source": "src_app_tsx",
-      "target": "app_parallaxbackground",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/Hero.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
       "source_location": "L96",
       "weight": 1.0,
-      "_src": "src_components_hero_tsx",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_hero_tsx",
       "_tgt": "hero_onmove",
-      "source": "src_components_hero_tsx",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_hero_tsx",
       "target": "hero_onmove",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/Hero.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
       "source_location": "L103",
       "weight": 1.0,
-      "_src": "src_components_hero_tsx",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_hero_tsx",
       "_tgt": "hero_onleave",
-      "source": "src_components_hero_tsx",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_hero_tsx",
       "target": "hero_onleave",
       "confidence_score": 1.0
     },
@@ -925,30 +994,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/RepoCard.tsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_src": "src_components_repocard_tsx",
-      "_tgt": "repocard_onmousemove",
-      "source": "src_components_repocard_tsx",
-      "target": "repocard_onmousemove",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/RepoCard.tsx",
-      "source_location": "L24",
-      "weight": 1.0,
-      "_src": "src_components_repocard_tsx",
-      "_tgt": "repocard_onmouseleave",
-      "source": "src_components_repocard_tsx",
-      "target": "repocard_onmouseleave",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/components/SkillBadge.tsx",
       "source_location": "L8",
       "weight": 1.0,
@@ -961,26 +1006,62 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/ScrollProgress.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ScrollProgress.tsx",
       "source_location": "L3",
       "weight": 1.0,
-      "_src": "src_components_scrollprogress_tsx",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_scrollprogress_tsx",
       "_tgt": "scrollprogress_scrollprogress",
-      "source": "src_components_scrollprogress_tsx",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_scrollprogress_tsx",
       "target": "scrollprogress_scrollprogress",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/Contact.tsx",
-      "source_location": "L27",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/IdeaStream.tsx",
+      "source_location": "L21",
       "weight": 1.0,
-      "_src": "src_components_contact_tsx",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_ideastream_tsx",
+      "_tgt": "ideastream_ideastream",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_ideastream_tsx",
+      "target": "ideastream_ideastream",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_contact_tsx",
+      "_tgt": "contact_contactcard",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_contact_tsx",
+      "target": "contact_contactcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_contact_tsx",
       "_tgt": "contact_copyemail",
-      "source": "src_components_contact_tsx",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_contact_tsx",
       "target": "contact_copyemail",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "contact_contactcard",
+      "_tgt": "usetilt_usetilt",
+      "source": "contact_contactcard",
+      "target": "usetilt_usetilt"
     },
     {
       "relation": "contains",
@@ -992,6 +1073,18 @@
       "_tgt": "section_section",
       "source": "src_components_section_tsx",
       "target": "section_section",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/SectionHeading.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_sectionheading_tsx",
+      "_tgt": "sectionheading_sectionheading",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_sectionheading_tsx",
+      "target": "sectionheading_sectionheading",
       "confidence_score": 1.0
     },
     {
@@ -1009,12 +1102,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/TimelineItem.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/TimelineItem.tsx",
       "source_location": "L10",
       "weight": 1.0,
-      "_src": "src_components_timelineitem_tsx",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_timelineitem_tsx",
       "_tgt": "timelineitem_timelineitem",
-      "source": "src_components_timelineitem_tsx",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_timelineitem_tsx",
       "target": "timelineitem_timelineitem",
       "confidence_score": 1.0
     },
@@ -1033,25 +1126,85 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/Education.tsx",
-      "source_location": "L7",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Skills.tsx",
+      "source_location": "L9",
       "weight": 1.0,
-      "_src": "src_components_education_tsx",
-      "_tgt": "education_education",
-      "source": "src_components_education_tsx",
-      "target": "education_education",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_skills_tsx",
+      "_tgt": "skills_skillgroupcard",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_skills_tsx",
+      "target": "skills_skillgroupcard",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Skills.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "skills_skillgroupcard",
+      "_tgt": "usetilt_usetilt",
+      "source": "skills_skillgroupcard",
+      "target": "usetilt_usetilt"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/About.tsx",
-      "source_location": "L25",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Education.tsx",
+      "source_location": "L9",
       "weight": 1.0,
-      "_src": "src_components_about_tsx",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_education_tsx",
+      "_tgt": "education_educard",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_education_tsx",
+      "target": "education_educard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Education.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "education_educard",
+      "_tgt": "usetilt_usetilt",
+      "source": "education_educard",
+      "target": "usetilt_usetilt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/About.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_about_tsx",
       "_tgt": "about_projectcard",
-      "source": "src_components_about_tsx",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_about_tsx",
       "target": "about_projectcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/About.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "about_projectcard",
+      "_tgt": "usetilt_usetilt",
+      "source": "about_projectcard",
+      "target": "usetilt_usetilt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/VideoBackground.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_videobackground_tsx",
+      "_tgt": "videobackground_tick",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_videobackground_tsx",
+      "target": "videobackground_tick",
       "confidence_score": 1.0
     },
     {
@@ -1064,6 +1217,18 @@
       "_tgt": "usegithubrepos_usegithubrepos",
       "source": "src_hooks_usegithubrepos_ts",
       "target": "usegithubrepos_usegithubrepos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/hooks/useTilt.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_hooks_usetilt_ts",
+      "_tgt": "usetilt_usetilt",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_hooks_usetilt_ts",
+      "target": "usetilt_usetilt",
       "confidence_score": 1.0
     },
     {
@@ -1100,6 +1265,18 @@
       "_tgt": "usecountup_usecountup",
       "source": "src_hooks_usecountup_ts",
       "target": "usecountup_usecountup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/lib/spotlight.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_lib_spotlight_ts",
+      "_tgt": "spotlight_trackspotlight",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_lib_spotlight_ts",
+      "target": "spotlight_trackspotlight",
       "confidence_score": 1.0
     },
     {

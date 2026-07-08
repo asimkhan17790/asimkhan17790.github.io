@@ -4,6 +4,8 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { Mail, Copy, Check } from 'lucide-react'
 import { staggerContainer, fadeUp, scaleIn } from '../lib/motion'
 import { profile } from '../data/profile'
+import SectionHeading from './SectionHeading'
+import { useTilt } from '../hooks/useTilt'
 
 function LinkedInLogo({ size = 16, style }: { size?: number; style?: React.CSSProperties }) {
   return (
@@ -21,6 +23,42 @@ function GitHubLogo({ size = 16, style }: { size?: number; style?: React.CSSProp
   )
 }
 
+type LinkItem = { label: string; value: string; href: string; icon: React.ElementType; action: (() => void) | null; brandColor: string }
+
+function ContactCard({ link, copied }: { link: LinkItem; copied: boolean }) {
+  const reduced = useReducedMotion()
+  const tilt = useTilt(6)
+  return (
+    <motion.a
+      href={link.href}
+      target={link.href.startsWith('mailto') ? undefined : '_blank'}
+      rel="noopener noreferrer"
+      variants={scaleIn}
+      whileHover={{ y: -4, transition: { type: 'spring', stiffness: 300, damping: 20 } }}
+      onMouseMove={tilt.onMouseMove}
+      onMouseLeave={tilt.onMouseLeave}
+      className="spotlight-card flex items-center gap-3 px-5 py-3.5 rounded-xl border border-color transition-all"
+      style={{ background: 'var(--card)', ...tilt.style }}
+    >
+      <motion.span
+        style={{ background: `${link.brandColor}22`, borderRadius: '8px', padding: '7px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, ...(reduced ? {} : { z: 16 }) }}
+      >
+        <link.icon size={15} style={{ color: link.brandColor }} />
+      </motion.span>
+      <motion.div className="text-left" style={reduced ? undefined : { z: 10 }}>
+        <div className="text-xs text-muted">{link.label}</div>
+        <div className="text-sm font-medium">{link.value}</div>
+      </motion.div>
+      {link.action && (
+        <button onClick={e => { e.preventDefault(); (link.action as () => void)() }}
+          className="ml-2 p-1 rounded" aria-label="Copy email">
+          {copied ? <Check size={13} style={{ color: 'var(--accent)' }} /> : <Copy size={13} className="text-muted" />}
+        </button>
+      )}
+    </motion.a>
+  )
+}
+
 export default function Contact() {
   const reduced = useReducedMotion()
   const [copied, setCopied] = useState(false)
@@ -29,7 +67,6 @@ export default function Contact() {
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
-  type LinkItem = { label: string; value: string; href: string; icon: React.ElementType; action: (() => void) | null; brandColor: string }
   const links: LinkItem[] = [
     { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail, action: copyEmail, brandColor: '#0078D4' },
     { label: 'LinkedIn', value: 'linkedin.com/in/asimkhan17', href: profile.linkedin, icon: LinkedInLogo, action: null, brandColor: '#0A66C2' },
@@ -39,33 +76,13 @@ export default function Contact() {
     <section id="contact" className="py-20 px-6 max-w-5xl mx-auto">
       <motion.div variants={reduced ? fadeUp : staggerContainer} initial="hidden" whileInView="visible"
         viewport={{ once: true, amount: 0.2 }} className="text-center">
-        <motion.p variants={fadeUp} className="text-xs font-mono uppercase tracking-widest mb-2"
-          style={{ color: 'var(--accent)' }}>Contact</motion.p>
-        <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-4">{"Let's connect."}</motion.h2>
+        <SectionHeading eyebrow="Contact" title="Let's connect." center className="mb-4" />
         <motion.p variants={fadeUp} className="text-muted max-w-md mx-auto mb-10">
           Open to interesting conversations, collaborations, and new ideas.
         </motion.p>
         <motion.div variants={reduced ? {} : staggerContainer} className="flex flex-col sm:flex-row gap-4 justify-center">
           {links.map(link => (
-            <motion.div key={link.label} variants={scaleIn}>
-              <a href={link.href} target={link.href.startsWith('mailto') ? undefined : '_blank'} rel="noopener noreferrer"
-                className="flex items-center gap-3 px-5 py-3.5 rounded-xl border border-color hover:opacity-80 transition-all"
-                style={{ background: 'var(--card)' }}>
-                <span style={{ background: `${link.brandColor}22`, borderRadius: '8px', padding: '7px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <link.icon size={15} style={{ color: link.brandColor }} />
-                </span>
-                <div className="text-left">
-                  <div className="text-xs text-muted">{link.label}</div>
-                  <div className="text-sm font-medium">{link.value}</div>
-                </div>
-                {link.action && (
-                  <button onClick={e => { e.preventDefault(); (link.action as () => void)() }}
-                    className="ml-2 p-1 rounded" aria-label="Copy email">
-                    {copied ? <Check size={13} style={{ color: 'var(--accent)' }} /> : <Copy size={13} className="text-muted" />}
-                  </button>
-                )}
-              </a>
-            </motion.div>
+            <ContactCard key={link.label} link={link} copied={copied} />
           ))}
         </motion.div>
       </motion.div>

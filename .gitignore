@@ -13,3 +13,8 @@ Gemfile.lock
 .claude/
 .superpowers/
 .agents/
+
+graphify-out/cache/
+graphify-out/.graphify_ast.json
+graphify-out/.graphify_incremental.json
+graphify-out/.graphify_uncached.txt

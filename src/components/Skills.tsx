@@ -1,7 +1,41 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { staggerContainer, fadeUp } from '../lib/motion'
 import { skillGroups } from '../data/skills'
+import type { SkillGroup } from '../data/skills'
 import SkillBadge from './SkillBadge'
+import SectionHeading from './SectionHeading'
+import { useTilt } from '../hooks/useTilt'
+
+function SkillGroupCard({ group }: { group: SkillGroup }) {
+  const reduced = useReducedMotion()
+  const tilt = useTilt(4)
+  const wide = group.skills.length >= 6
+
+  return (
+    <motion.div
+      variants={fadeUp}
+      onMouseMove={tilt.onMouseMove}
+      onMouseLeave={tilt.onMouseLeave}
+      className={`spotlight-card rounded-xl border border-color p-5 ${wide ? 'md:col-span-2' : ''}`}
+      style={{
+        background: 'color-mix(in srgb, var(--card) 85%, transparent)',
+        ...tilt.style,
+      }}
+    >
+      <motion.div style={reduced ? undefined : { z: 16 }}>
+        <h3 className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-muted mb-4">
+          <span className="inline-block h-px w-4" style={{ background: 'var(--spark)' }} />
+          {group.category}
+        </h3>
+        <motion.div className="flex flex-wrap gap-2" variants={reduced ? {} : staggerContainer}>
+          {group.skills.map(skill => (
+            <SkillBadge key={skill} name={skill} />
+          ))}
+        </motion.div>
+      </motion.div>
+    </motion.div>
+  )
+}
 
 export default function Skills() {
   const reduced = useReducedMotion()
@@ -14,24 +48,11 @@ export default function Skills() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
       >
-        <motion.p variants={fadeUp} className="text-xs font-mono uppercase tracking-widest mb-2" style={{ color: 'var(--accent)' }}>
-          Skills
-        </motion.p>
-        <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-10">What I work with.</motion.h2>
+        <SectionHeading eyebrow="Skills" title="What I work with." className="mb-10" />
 
-        <div className="space-y-8">
+        <div className="grid md:grid-cols-2 gap-4">
           {skillGroups.map(group => (
-            <motion.div key={group.category} variants={fadeUp}>
-              <h3 className="text-xs font-mono uppercase tracking-wider text-muted mb-3">{group.category}</h3>
-              <motion.div
-                className="flex flex-wrap gap-2"
-                variants={reduced ? {} : staggerContainer}
-              >
-                {group.skills.map(skill => (
-                  <SkillBadge key={skill} name={skill} />
-                ))}
-              </motion.div>
-            </motion.div>
+            <SkillGroupCard key={group.category} group={group} />
           ))}
         </div>
       </motion.div>
