@@ -1,7 +1,7 @@
 # Graph Report - /Users/maverickhan17/Projects/asimkhan17790.github.io  (2026-07-07)
 
 ## Corpus Check
-- 38 files · ~268,594 words
+- 38 files · ~268,572 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -263,7 +263,7 @@ Nodes (1): Rationale: All personal content in src/data/ for CMS-free content upd
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 12`** (2 nodes): `TimelineItem()`, `TimelineItem.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 13`** (2 nodes): `ThemeToggle.tsx`, `ThemeToggle()`
+- **Thin community `Community 13`** (2 nodes): `ThemeToggle()`, `ThemeToggle.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 14`** (2 nodes): `VideoBackground.tsx`, `tick()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.

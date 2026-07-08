@@ -10,7 +10,7 @@ export default function ThemeToggle({ theme, toggle }: Props) {
     <button
       onClick={toggle}
       aria-label="Toggle theme"
-      className="p-2 rounded-lg transition-colors hover:bg-card border border-color"
+      className="glass-btn p-2 rounded-lg"
     >
       {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
     </button>

@@ -51,7 +51,7 @@ function ContactCard({ link, copied }: { link: LinkItem; copied: boolean }) {
       </motion.div>
       {link.action && (
         <button onClick={e => { e.preventDefault(); (link.action as () => void)() }}
-          className="ml-2 p-1 rounded" aria-label="Copy email">
+          className="glass-btn ml-2 p-1.5 rounded-md" aria-label="Copy email">
           {copied ? <Check size={13} style={{ color: 'var(--accent)' }} /> : <Copy size={13} className="text-muted" />}
         </button>
       )}

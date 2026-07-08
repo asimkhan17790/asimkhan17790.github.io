@@ -45,8 +45,8 @@ export default function Nav({ active, theme, toggleTheme }: Props) {
                 {isActive && (
                   <motion.span
                     layoutId="nav-pill"
-                    className="absolute inset-0 rounded-md"
-                    style={{ background: 'color-mix(in srgb, var(--accent) 12%, transparent)' }}
+                    className="glass-btn absolute inset-0 rounded-md"
+                    style={{ translate: '0 0' }}
                     transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                   />
                 )}
@@ -59,7 +59,7 @@ export default function Nav({ active, theme, toggleTheme }: Props) {
         <div className="flex items-center gap-2">
           <ThemeToggle theme={theme} toggle={toggleTheme} />
           <button
-            className="md:hidden p-2 rounded-lg"
+            className="glass-btn md:hidden p-2 rounded-lg"
             onClick={() => setOpen(o => !o)}
             aria-label="Toggle menu"
           >

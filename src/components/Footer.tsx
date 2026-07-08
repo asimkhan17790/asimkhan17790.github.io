@@ -12,8 +12,7 @@ export default function Footer({ theme, toggleTheme }: Props) {
         <div className="flex items-center gap-3">
           <ThemeToggle theme={theme} toggle={toggleTheme} />
           <motion.button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            whileHover={{ y: -2 }}
-            className="p-2 rounded-lg border border-color hover:bg-card transition-colors"
+            className="glass-btn p-2 rounded-lg"
             aria-label="Scroll to top">
             <ArrowUp size={14} />
           </motion.button>
