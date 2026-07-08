@@ -32,8 +32,7 @@ export default function Projects() {
           <motion.div variants={fadeUp} className="flex flex-wrap gap-2 mb-8">
             {languages.map(lang => (
               <button key={lang} onClick={() => setFilter(lang)}
-                className={`px-3 py-1 rounded-full text-xs font-medium border transition-all ${filter === lang ? 'text-white border-transparent' : 'border-color text-muted hover:text-fg'}`}
-                style={filter === lang ? { background: 'var(--accent)', borderColor: 'var(--accent)' } : undefined}>{lang}</button>
+                className={`glass-btn px-3.5 py-1.5 rounded-full text-xs font-medium ${filter === lang ? 'glass-btn-active' : 'text-muted hover:text-fg'}`}>{lang}</button>
             ))}
           </motion.div>
         )}

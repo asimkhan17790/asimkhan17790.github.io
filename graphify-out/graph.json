@@ -172,9 +172,9 @@
     {
       "label": "Nav.tsx",
       "file_type": "code",
-      "source_file": "src/components/Nav.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Nav.tsx",
       "source_location": "L1",
-      "id": "src_components_nav_tsx",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_nav_tsx",
       "community": 27,
       "norm_label": "nav.tsx"
     },
@@ -334,16 +334,16 @@
     {
       "label": "Footer.tsx",
       "file_type": "code",
-      "source_file": "src/components/Footer.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Footer.tsx",
       "source_location": "L1",
-      "id": "src_components_footer_tsx",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_footer_tsx",
       "community": 11,
       "norm_label": "footer.tsx"
     },
     {
       "label": "Footer()",
       "file_type": "code",
-      "source_file": "src/components/Footer.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Footer.tsx",
       "source_location": "L7",
       "id": "footer_footer",
       "community": 11,
@@ -370,16 +370,16 @@
     {
       "label": "ThemeToggle.tsx",
       "file_type": "code",
-      "source_file": "src/components/ThemeToggle.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ThemeToggle.tsx",
       "source_location": "L1",
-      "id": "src_components_themetoggle_tsx",
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_themetoggle_tsx",
       "community": 13,
       "norm_label": "themetoggle.tsx"
     },
     {
       "label": "ThemeToggle()",
       "file_type": "code",
-      "source_file": "src/components/ThemeToggle.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ThemeToggle.tsx",
       "source_location": "L8",
       "id": "themetoggle_themetoggle",
       "community": 13,
@@ -1090,12 +1090,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/Footer.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Footer.tsx",
       "source_location": "L7",
       "weight": 1.0,
-      "_src": "src_components_footer_tsx",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_footer_tsx",
       "_tgt": "footer_footer",
-      "source": "src_components_footer_tsx",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_footer_tsx",
       "target": "footer_footer",
       "confidence_score": 1.0
     },
@@ -1114,12 +1114,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/ThemeToggle.tsx",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ThemeToggle.tsx",
       "source_location": "L8",
       "weight": 1.0,
-      "_src": "src_components_themetoggle_tsx",
+      "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_themetoggle_tsx",
       "_tgt": "themetoggle_themetoggle",
-      "source": "src_components_themetoggle_tsx",
+      "source": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_themetoggle_tsx",
       "target": "themetoggle_themetoggle",
       "confidence_score": 1.0
     },

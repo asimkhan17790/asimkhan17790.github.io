@@ -197,8 +197,8 @@ export default function Hero({ theme, toggleTheme }: Props) {
             href={profile.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-white transition-opacity hover:opacity-90"
-            style={{ background: '#2C2C2C' }}
+            className="glass-btn flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm text-white"
+            style={{ '--glass-tint': '#3F3F46' } as React.CSSProperties}
           >
             <FileText size={15} />
             Resume
@@ -207,8 +207,8 @@ export default function Hero({ theme, toggleTheme }: Props) {
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-white transition-opacity hover:opacity-90"
-            style={{ background: '#0A66C2' }}
+            className="glass-btn flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm text-white"
+            style={{ '--glass-tint': '#0A66C2' } as React.CSSProperties}
           >
             <Linkedin size={15} />
             LinkedIn
@@ -217,8 +217,8 @@ export default function Hero({ theme, toggleTheme }: Props) {
             href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-white transition-opacity hover:opacity-90"
-            style={{ background: '#181717' }}
+            className="glass-btn flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm text-white"
+            style={{ '--glass-tint': '#181717' } as React.CSSProperties}
           >
             <Github size={15} />
             GitHub
