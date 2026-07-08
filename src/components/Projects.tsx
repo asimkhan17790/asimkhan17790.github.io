@@ -3,6 +3,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { staggerContainer, fadeUp } from '../lib/motion'
 import { useGithubRepos } from '../hooks/useGithubRepos'
 import RepoCard from './RepoCard'
+import SectionHeading from './SectionHeading'
 
 const SKELETONS = Array.from({ length: 6 }, (_, i) => i)
 
@@ -25,8 +26,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 px-6 max-w-5xl mx-auto">
       <motion.div variants={reduced ? fadeUp : staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.05 }}>
-        <motion.p variants={fadeUp} className="text-xs font-mono uppercase tracking-widest mb-2" style={{ color: 'var(--accent)' }}>Projects</motion.p>
-        <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-4">{"What I've built."}</motion.h2>
+        <SectionHeading eyebrow="Projects" title="What I've built." className="mb-4" />
 
         {!loading && languages.length > 1 && (
           <motion.div variants={fadeUp} className="flex flex-wrap gap-2 mb-8">

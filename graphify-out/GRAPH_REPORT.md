@@ -1,12 +1,12 @@
-# Graph Report - /Users/maverickhan17/Projects/asimkhan17790.github.io  (2026-05-30)
+# Graph Report - /Users/maverickhan17/Projects/asimkhan17790.github.io  (2026-07-07)
 
 ## Corpus Check
-- 33 files · ~264,420 words
+- 38 files · ~268,594 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 77 nodes · 39 edges · 39 communities detected
-- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.79)
+- 86 nodes · 47 edges · 40 communities detected
+- Extraction: 74% EXTRACTED · 26% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -49,18 +49,19 @@
 - [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Asim Khan — Engineering Vice President` - 10 edges
 2. `README — Portfolio Project Documentation` - 8 edges
-3. `Matrix-Style Green Code Rain Background — Hero Section Image` - 2 edges
-4. `Asim Khan Resume PDF` - 2 edges
-5. `CLAUDE.md — AI Agent Instructions` - 1 edges
-6. `Hero Ghost Background Implementation Plan` - 1 edges
-7. `Goldman Sachs — Financial Services Organization` - 1 edges
-8. `Goldman Sachs Logo` - 1 edges
-9. `Accenture Logo — Blue Arrow Brand Mark` - 1 edges
-10. `Citi (Citibank) Logo — Blue and Red Brand Mark` - 1 edges
+3. `useTilt()` - 5 edges
+4. `ContactCard()` - 2 edges
+5. `SkillGroupCard()` - 2 edges
+6. `EduCard()` - 2 edges
+7. `ProjectCard()` - 2 edges
+8. `Matrix-Style Green Code Rain Background — Hero Section Image` - 2 edges
+9. `Asim Khan Resume PDF` - 2 edges
+10. `CLAUDE.md — AI Agent Instructions` - 1 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Asim Khan — Engineering Vice President` --references--> `Goldman Sachs Logo`  [INFERRED]
@@ -84,16 +85,16 @@
 ## Communities
 
 ### Community 0 - "Community 0"
+Cohesion: 0.18
+Nodes (5): ProjectCard(), ContactCard(), EduCard(), SkillGroupCard(), useTilt()
+
+### Community 1 - "Community 1"
 Cohesion: 0.2
 Nodes (10): Accenture Logo — Blue Arrow Brand Mark, Dr. APJ Abdul Kalam Technical University Logo — Lucknow, Uttar Pradesh, Asim Khan — Engineering Vice President, Citi (Citibank) Logo — Blue and Red Brand Mark, Favicon SVG — AK Monogram, Matte Graphite Design, Goldman Sachs — Financial Services Organization, Goldman Sachs Logo, LinkedIn Profile PDF (+2 more)
 
-### Community 1 - "Community 1"
+### Community 2 - "Community 2"
 Cohesion: 0.22
 Nodes (9): Asim Khan Resume PDF, CLAUDE.md — AI Agent Instructions, README — Portfolio Project Documentation, Framer Motion — Animation Library, GitHub Pages — Deployment Platform, React 18 — UI Framework, Tailwind CSS — Utility-First Styling, TypeScript — Type-Safe Language (+1 more)
-
-### Community 2 - "Community 2"
-Cohesion: 0.67
-Nodes (0): 
 
 ### Community 3 - "Community 3"
 Cohesion: 0.67
@@ -229,48 +230,52 @@ Nodes (0):
 
 ### Community 36 - "Community 36"
 Cohesion: 1.0
-Nodes (1): RGB Mechanical Keyboard — Tech/Developer Aesthetic Image
+Nodes (0): 
 
 ### Community 37 - "Community 37"
 Cohesion: 1.0
-Nodes (1): Rationale: Radial vignette + bottom gradient chosen to dissolve photo edges into dark UI without hard borders
+Nodes (1): RGB Mechanical Keyboard — Tech/Developer Aesthetic Image
 
 ### Community 38 - "Community 38"
+Cohesion: 1.0
+Nodes (1): Rationale: Radial vignette + bottom gradient chosen to dissolve photo edges into dark UI without hard borders
+
+### Community 39 - "Community 39"
 Cohesion: 1.0
 Nodes (1): Rationale: All personal content in src/data/ for CMS-free content updates without touching components
 
 ## Knowledge Gaps
 - **21 isolated node(s):** `CLAUDE.md — AI Agent Instructions`, `Hero Ghost Background Implementation Plan`, `Goldman Sachs — Financial Services Organization`, `Goldman Sachs Logo`, `Accenture Logo — Blue Arrow Brand Mark` (+16 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 5`** (2 nodes): `ParallaxBackground()`, `App.tsx`
+- **Thin community `Community 5`** (2 nodes): `LogoBadge()`, `LogoBadge.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 6`** (2 nodes): `LogoBadge()`, `LogoBadge.tsx`
+- **Thin community `Community 6`** (2 nodes): `SkillBadge()`, `SkillBadge.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 7`** (2 nodes): `SkillBadge()`, `SkillBadge.tsx`
+- **Thin community `Community 7`** (2 nodes): `ScrollProgress()`, `ScrollProgress.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 8`** (2 nodes): `ScrollProgress()`, `ScrollProgress.tsx`
+- **Thin community `Community 8`** (2 nodes): `IdeaStream()`, `IdeaStream.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 9`** (2 nodes): `copyEmail()`, `Contact.tsx`
+- **Thin community `Community 9`** (2 nodes): `Section()`, `Section.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 10`** (2 nodes): `Section()`, `Section.tsx`
+- **Thin community `Community 10`** (2 nodes): `SectionHeading()`, `SectionHeading.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 11`** (2 nodes): `Footer()`, `Footer.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 12`** (2 nodes): `TimelineItem.tsx`, `TimelineItem()`
+- **Thin community `Community 12`** (2 nodes): `TimelineItem()`, `TimelineItem.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 13`** (2 nodes): `ThemeToggle.tsx`, `ThemeToggle()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 14`** (2 nodes): `Education()`, `Education.tsx`
+- **Thin community `Community 14`** (2 nodes): `VideoBackground.tsx`, `tick()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 15`** (2 nodes): `ProjectCard()`, `About.tsx`
+- **Thin community `Community 15`** (2 nodes): `useGithubRepos.ts`, `useGithubRepos()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 16`** (2 nodes): `useGithubRepos.ts`, `useGithubRepos()`
+- **Thin community `Community 16`** (2 nodes): `useActiveSection.ts`, `useActiveSection()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 17`** (2 nodes): `useActiveSection.ts`, `useActiveSection()`
+- **Thin community `Community 17`** (2 nodes): `useTheme.ts`, `useTheme()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 18`** (2 nodes): `useTheme.ts`, `useTheme()`
+- **Thin community `Community 18`** (2 nodes): `useCountUp.ts`, `useCountUp()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 19`** (2 nodes): `useCountUp.ts`, `useCountUp()`
+- **Thin community `Community 19`** (2 nodes): `trackSpotlight()`, `spotlight.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 20`** (1 nodes): `tailwind.config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -278,47 +283,51 @@ Nodes (1): Rationale: All personal content in src/data/ for CMS-free content upd
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 22`** (1 nodes): `postcss.config.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 23`** (1 nodes): `main.tsx`
+- **Thin community `Community 23`** (1 nodes): `App.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 24`** (1 nodes): `vite-env.d.ts`
+- **Thin community `Community 24`** (1 nodes): `main.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 25`** (1 nodes): `Projects.tsx`
+- **Thin community `Community 25`** (1 nodes): `vite-env.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 26`** (1 nodes): `Nav.tsx`
+- **Thin community `Community 26`** (1 nodes): `Projects.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 27`** (1 nodes): `Experience.tsx`
+- **Thin community `Community 27`** (1 nodes): `Nav.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 28`** (1 nodes): `Skills.tsx`
+- **Thin community `Community 28`** (1 nodes): `Experience.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 29`** (1 nodes): `langColors.ts`
+- **Thin community `Community 29`** (1 nodes): `RepoCard.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 30`** (1 nodes): `motion.ts`
+- **Thin community `Community 30`** (1 nodes): `langColors.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 31`** (1 nodes): `projects.ts`
+- **Thin community `Community 31`** (1 nodes): `motion.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 32`** (1 nodes): `education.ts`
+- **Thin community `Community 32`** (1 nodes): `projects.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 33`** (1 nodes): `experience.ts`
+- **Thin community `Community 33`** (1 nodes): `education.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 34`** (1 nodes): `profile.ts`
+- **Thin community `Community 34`** (1 nodes): `experience.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 35`** (1 nodes): `skills.ts`
+- **Thin community `Community 35`** (1 nodes): `profile.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 36`** (1 nodes): `RGB Mechanical Keyboard — Tech/Developer Aesthetic Image`
+- **Thin community `Community 36`** (1 nodes): `skills.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 37`** (1 nodes): `Rationale: Radial vignette + bottom gradient chosen to dissolve photo edges into dark UI without hard borders`
+- **Thin community `Community 37`** (1 nodes): `RGB Mechanical Keyboard — Tech/Developer Aesthetic Image`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 38`** (1 nodes): `Rationale: All personal content in src/data/ for CMS-free content updates without touching components`
+- **Thin community `Community 38`** (1 nodes): `Rationale: Radial vignette + bottom gradient chosen to dissolve photo edges into dark UI without hard borders`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 39`** (1 nodes): `Rationale: All personal content in src/data/ for CMS-free content updates without touching components`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Asim Khan — Engineering Vice President` connect `Community 0` to `Community 1`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
-- **Why does `Asim Khan Resume PDF` connect `Community 1` to `Community 0`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+- **Why does `Asim Khan — Engineering Vice President` connect `Community 1` to `Community 2`?**
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+- **Why does `Asim Khan Resume PDF` connect `Community 2` to `Community 1`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **Are the 8 inferred relationships involving `Asim Khan — Engineering Vice President` (e.g. with `Goldman Sachs Logo` and `Accenture Logo — Blue Arrow Brand Mark`) actually correct?**
   _`Asim Khan — Engineering Vice President` has 8 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 4 inferred relationships involving `useTilt()` (e.g. with `ContactCard()` and `SkillGroupCard()`) actually correct?**
+  _`useTilt()` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `CLAUDE.md — AI Agent Instructions`, `Hero Ghost Background Implementation Plan`, `Goldman Sachs — Financial Services Organization` to the rest of the system?**
   _21 weakly-connected nodes found - possible documentation gaps or missing edges._

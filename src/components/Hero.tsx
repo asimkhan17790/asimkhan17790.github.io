@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { motion, useReducedMotion, useMotionValue, useSpring } from 'framer-motion'
+import { motion, useReducedMotion, useMotionValue, useSpring, useScroll, useTransform } from 'framer-motion'
 import { Github, Linkedin, FileText, ChevronDown } from 'lucide-react'
 import { profile } from '../data/profile'
 import { fadeUp, staggerContainer } from '../lib/motion'
@@ -120,9 +120,35 @@ function MagneticButton({ children, href, target, rel, className, style }: Magne
 
 export default function Hero({ theme, toggleTheme }: Props) {
   const reduced = useReducedMotion()
+  const { scrollY } = useScroll()
+  const contentY = useTransform(scrollY, [0, 600], [0, 130])
+  const contentOpacity = useTransform(scrollY, [0, 450], [1, 0])
+  const contentScale = useTransform(scrollY, [0, 600], [1, 0.94])
+
+  // mouse-tracking 3D parallax: the hero block leans toward the cursor
+  const tiltX = useMotionValue(0)
+  const tiltY = useMotionValue(0)
+  const sTiltX = useSpring(tiltX, { stiffness: 90, damping: 20 })
+  const sTiltY = useSpring(tiltY, { stiffness: 90, damping: 20 })
+
+  function onHeroMove(e: { clientX: number; clientY: number }) {
+    if (reduced) return
+    tiltX.set(((e.clientY - window.innerHeight / 2) / (window.innerHeight / 2)) * -5)
+    tiltY.set(((e.clientX - window.innerWidth / 2) / (window.innerWidth / 2)) * 5)
+  }
+
+  function onHeroLeave() {
+    tiltX.set(0)
+    tiltY.set(0)
+  }
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center pt-14">
+    <section
+      id="hero"
+      className="relative min-h-screen flex flex-col items-center justify-center pt-14"
+      onMouseMove={onHeroMove}
+      onMouseLeave={onHeroLeave}
+    >
       {/* Noise texture */}
       <svg className="hidden" aria-hidden="true">
         <defs>
@@ -140,20 +166,33 @@ export default function Hero({ theme, toggleTheme }: Props) {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
+        style={
+          reduced
+            ? undefined
+            : {
+                y: contentY,
+                opacity: contentOpacity,
+                scale: contentScale,
+                rotateX: sTiltX,
+                rotateY: sTiltY,
+                transformPerspective: 1100,
+                transformStyle: 'preserve-3d',
+              }
+        }
       >
-        <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight mb-4">
+        <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight mb-4" style={reduced ? undefined : { z: 60 }}>
           <span className="text-shimmer">{profile.name}</span>
         </motion.h1>
 
-        <motion.div variants={fadeUp} className="mb-4">
+        <motion.div variants={fadeUp} className="mb-4" style={reduced ? undefined : { z: 30 }}>
           <TypewriterBadge />
         </motion.div>
 
-        <motion.p variants={fadeUp} className="text-lg sm:text-xl text-muted max-w-xl mx-auto mb-8 leading-relaxed">
+        <motion.p variants={fadeUp} className="text-[clamp(0.85rem,3.2vw,1.25rem)] text-muted mx-auto mb-8 leading-relaxed whitespace-nowrap" style={reduced ? undefined : { z: 20 }}>
           {profile.tagline}
         </motion.p>
 
-        <motion.div variants={fadeUp} className="flex flex-wrap items-center justify-center gap-3">
+        <motion.div variants={fadeUp} className="flex flex-wrap items-center justify-center gap-3" style={reduced ? undefined : { z: 40 }}>
           <MagneticButton
             href={profile.resume}
             target="_blank"

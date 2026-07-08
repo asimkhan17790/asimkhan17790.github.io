@@ -3,6 +3,7 @@ import { staggerContainer, fadeUp } from '../lib/motion'
 import { experience } from '../data/experience'
 import TimelineItem from './TimelineItem'
 import LogoBadge from './LogoBadge'
+import SectionHeading from './SectionHeading'
 
 export default function Experience() {
   const reduced = useReducedMotion()
@@ -15,10 +16,7 @@ export default function Experience() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.05 }}
       >
-        <motion.p variants={fadeUp} className="text-xs font-mono uppercase tracking-widest mb-2" style={{ color: 'var(--accent)' }}>
-          Experience
-        </motion.p>
-        <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-12">Where I've worked.</motion.h2>
+        <SectionHeading eyebrow="Experience" title="Where I've worked." className="mb-12" />
 
         <div className="space-y-10">
           {experience.map(job => (
