@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { tiltUpPure } from '../lib/motion'
 
 interface Props {
   eyebrow: string
@@ -22,9 +23,11 @@ export default function SectionHeading({ eyebrow, title, center = false, classNa
   return (
     <motion.div
       className={`${center ? 'text-center' : ''} ${className}`}
+      variants={reduced ? undefined : tiltUpPure}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.6 }}
+      style={reduced ? undefined : { transformPerspective: 800, transformStyle: 'preserve-3d' }}
     >
       <p className={`flex items-center gap-2 text-xs font-mono uppercase tracking-widest mb-2 ${center ? 'justify-center' : ''}`} style={{ color: 'var(--accent)' }}>
         <motion.span

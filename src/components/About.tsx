@@ -71,10 +71,13 @@ export default function About() {
           <p className="text-muted leading-relaxed">{profile.bio}</p>
         </motion.div>
 
-        <div ref={gridRef} className="grid grid-cols-2 gap-4">
-          {projects.map((p, i) => (
-            <ProjectCard key={p.url} {...p} index={reduced ? 0 : i} inView={inView} />
-          ))}
+        <div>
+          <p className="text-xs font-mono uppercase tracking-wider text-muted mb-3">Side projects</p>
+          <div ref={gridRef} className="grid grid-cols-2 gap-4">
+            {projects.map((p, i) => (
+              <ProjectCard key={p.url} {...p} index={reduced ? 0 : i} inView={inView} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
