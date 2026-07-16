@@ -1,16 +1,17 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { GraduationCap } from 'lucide-react'
-import { staggerContainer, fadeUp } from '../lib/motion'
+import { staggerContainer, fadeUp, tiltUp } from '../lib/motion'
 import { education } from '../data/education'
 import LogoBadge from './LogoBadge'
 import SectionHeading from './SectionHeading'
 import { useTilt } from '../hooks/useTilt'
 
 function EduCard({ deg }: { deg: (typeof education)[number] }) {
+  const reduced = useReducedMotion()
   const tilt = useTilt(6)
   return (
     <motion.div
-      variants={fadeUp}
+      variants={reduced ? fadeUp : tiltUp}
       onMouseMove={tilt.onMouseMove}
       onMouseLeave={tilt.onMouseLeave}
       whileHover={{ y: -4 }}

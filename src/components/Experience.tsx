@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import { staggerContainer, fadeUp } from '../lib/motion'
+import { staggerContainer, fadeUp, tiltUp } from '../lib/motion'
 import { experience } from '../data/experience'
 import TimelineItem from './TimelineItem'
 import LogoBadge from './LogoBadge'
@@ -20,7 +20,11 @@ export default function Experience() {
 
         <div className="space-y-10">
           {experience.map(job => (
-            <motion.div key={job.company} variants={fadeUp}>
+            <motion.div
+              key={job.company}
+              variants={reduced ? fadeUp : tiltUp}
+              style={reduced ? undefined : { transformPerspective: 1000, transformStyle: 'preserve-3d' }}
+            >
               <div className="flex items-center gap-3 mb-5">
                 <span
                   className="w-10 h-10 rounded-lg flex items-center justify-center text-xs font-bold font-mono shrink-0 border border-color overflow-hidden"

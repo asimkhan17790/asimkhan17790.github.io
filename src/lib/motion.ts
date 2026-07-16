@@ -34,3 +34,21 @@ export const cardHover = {
   rest: { y: 0, scale: 1 },
   hover: { y: -4, scale: 1.02, transition: { type: 'spring', stiffness: 300, damping: 20 } },
 }
+
+/** 3D scroll reveal: content tilts up out of the page instead of just fading in. Pair with `transformPerspective` + `transformStyle: 'preserve-3d'` on the same element. */
+export const tiltUp: Variants = {
+  hidden: { opacity: 0, y: 36, rotateX: 10, z: -50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    rotateX: 0,
+    z: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+  },
+}
+
+/** Same tilt, no opacity/y change — for wrapping already-visible content (e.g. SectionHeading) with a pure 3D tilt-in. */
+export const tiltUpPure: Variants = {
+  hidden: { rotateX: 8, z: -30 },
+  visible: { rotateX: 0, z: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+}

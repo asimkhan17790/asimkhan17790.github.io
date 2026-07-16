@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import { staggerContainer, fadeUp } from '../lib/motion'
+import { staggerContainer, fadeUp, tiltUp } from '../lib/motion'
 import { skillGroups } from '../data/skills'
 import type { SkillGroup } from '../data/skills'
 import SkillBadge from './SkillBadge'
@@ -13,7 +13,7 @@ function SkillGroupCard({ group }: { group: SkillGroup }) {
 
   return (
     <motion.div
-      variants={fadeUp}
+      variants={reduced ? fadeUp : tiltUp}
       onMouseMove={tilt.onMouseMove}
       onMouseLeave={tilt.onMouseLeave}
       className={`spotlight-card rounded-xl border border-color p-5 ${wide ? 'md:col-span-2' : ''}`}
@@ -24,7 +24,7 @@ function SkillGroupCard({ group }: { group: SkillGroup }) {
     >
       <motion.div style={reduced ? undefined : { z: 16 }}>
         <h3 className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-muted mb-4">
-          <span className="inline-block h-px w-4" style={{ background: 'var(--spark)' }} />
+          <span className="inline-block h-px w-4" style={{ background: 'var(--border)' }} />
           {group.category}
         </h3>
         <motion.div className="flex flex-wrap gap-2" variants={reduced ? {} : staggerContainer}>

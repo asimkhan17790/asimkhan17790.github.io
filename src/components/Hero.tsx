@@ -10,14 +10,7 @@ interface Props {
   toggleTheme: () => void
 }
 
-const LABELS: { text: string; color: string }[] = [
-  { text: 'Techie', color: '#4f93ffff' },
-  { text: 'Gamer', color: '#8b5cf6' },
-  { text: 'Music Lover', color: '#f43f5e' },
-  { text: 'Football Fan', color: '#22c55e' },
-  { text: 'Foodie', color: '#f97316' },
-  { text: 'Fitness Freak', color: '#0320ffff' }
-]
+const LABELS: string[] = ['Techie', 'Gamer', 'Music Lover', 'Football Fan', 'Foodie', 'Fitness Freak']
 
 function TypewriterBadge() {
   const reduced = useReducedMotion()
@@ -27,7 +20,7 @@ function TypewriterBadge() {
 
   useEffect(() => {
     if (reduced) return
-    const current = LABELS[index].text
+    const current = LABELS[index]
 
     if (!deleting && text === current) {
       const t = setTimeout(() => setDeleting(true), 1500)
@@ -48,8 +41,7 @@ function TypewriterBadge() {
     return () => clearTimeout(t)
   }, [text, deleting, index, reduced])
 
-  const color = LABELS[index].color
-  const display = reduced ? LABELS.map(l => l.text).join(' | ') : text
+  const display = reduced ? LABELS.join(' | ') : text
 
   return (
     <span
@@ -57,21 +49,15 @@ function TypewriterBadge() {
       style={{ borderColor: 'var(--accent)', color: 'var(--accent)', minWidth: '16rem' }}
     >
       <span className="opacity-60 mr-1">I am&nbsp;</span>
-      <motion.span
-        animate={{ color }}
-        transition={{ duration: 0.4, ease: 'easeInOut' }}
-        className="inline-flex items-center"
-      >
+      <span className="inline-flex items-center">
         {display}
         {!reduced && (
-          <motion.span
-            animate={{ background: color }}
-            transition={{ duration: 0.4, ease: 'easeInOut' }}
+          <span
             className="ml-0.5 inline-block w-px h-3.5 align-middle"
-            style={{ animation: 'blink 1s step-end infinite' }}
+            style={{ background: 'var(--spark)', animation: 'blink 1s step-end infinite' }}
           />
         )}
-      </motion.span>
+      </span>
       <style>{`@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}`}</style>
     </span>
   )
@@ -180,15 +166,23 @@ export default function Hero({ theme, toggleTheme }: Props) {
               }
         }
       >
-        <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight mb-4" style={reduced ? undefined : { z: 60 }}>
+        <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight mb-3" style={reduced ? undefined : { z: 60 }}>
           <span className="text-shimmer">{profile.name}</span>
         </motion.h1>
+
+        <motion.p
+          variants={fadeUp}
+          className="font-mono uppercase tracking-wider text-[clamp(0.8rem,2.4vw,1rem)] font-medium mb-5"
+          style={{ color: 'var(--accent)', ...(reduced ? {} : { z: 45 }) }}
+        >
+          {profile.title} · {profile.company}
+        </motion.p>
 
         <motion.div variants={fadeUp} className="mb-4" style={reduced ? undefined : { z: 30 }}>
           <TypewriterBadge />
         </motion.div>
 
-        <motion.p variants={fadeUp} className="text-[clamp(0.85rem,3.2vw,1.25rem)] text-muted mx-auto mb-8 leading-relaxed whitespace-nowrap" style={reduced ? undefined : { z: 20 }}>
+        <motion.p variants={fadeUp} className="text-[clamp(0.85rem,3.2vw,1.25rem)] text-muted mx-auto mb-8 leading-relaxed" style={reduced ? undefined : { z: 20 }}>
           {profile.tagline}
         </motion.p>
 
