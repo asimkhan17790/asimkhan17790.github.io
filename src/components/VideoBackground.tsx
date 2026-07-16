@@ -20,8 +20,8 @@ export default function VideoBackground({ theme }: Props) {
   const scale = useTransform(scrollYProgress, [0, 1], [1.12, 1.32])
 
   // strongest behind the hero, settles into ambient texture deeper down
-  const peak = theme === 'dark' ? 0.55 : 0.3
-  const ambient = theme === 'dark' ? 0.22 : 0.11
+  const peak = theme === 'dark' ? 0.55 : 0.4
+  const ambient = theme === 'dark' ? 0.22 : 0.17
   const opacity = useTransform(scrollYProgress, [0, 0.1, 0.32, 1], [peak, peak, ambient, ambient])
 
   // letterbox bars frame the hero, then release as content takes over
