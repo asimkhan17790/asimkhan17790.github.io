@@ -3,6 +3,7 @@ import { motion, useReducedMotion, useMotionValue, useSpring, useScroll, useTran
 import { Github, Linkedin, FileText, ChevronDown } from 'lucide-react'
 import { profile } from '../data/profile'
 import { fadeUp, staggerContainer } from '../lib/motion'
+import { trackSpotlight } from '../lib/spotlight'
 import ThemeToggle from './ThemeToggle'
 
 interface Props {
@@ -117,7 +118,8 @@ export default function Hero({ theme, toggleTheme }: Props) {
   const sTiltX = useSpring(tiltX, { stiffness: 90, damping: 20 })
   const sTiltY = useSpring(tiltY, { stiffness: 90, damping: 20 })
 
-  function onHeroMove(e: { clientX: number; clientY: number }) {
+  function onHeroMove(e: React.MouseEvent<HTMLElement>) {
+    trackSpotlight(e)
     if (reduced) return
     tiltX.set(((e.clientY - window.innerHeight / 2) / (window.innerHeight / 2)) * -5)
     tiltY.set(((e.clientX - window.innerWidth / 2) / (window.innerWidth / 2)) * 5)
@@ -131,7 +133,7 @@ export default function Hero({ theme, toggleTheme }: Props) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center pt-14"
+      className="spotlight-hero relative min-h-screen flex flex-col items-center justify-center pt-14"
       onMouseMove={onHeroMove}
       onMouseLeave={onHeroLeave}
     >
@@ -169,14 +171,6 @@ export default function Hero({ theme, toggleTheme }: Props) {
         <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight mb-3" style={reduced ? undefined : { z: 60 }}>
           <span className="text-shimmer">{profile.name}</span>
         </motion.h1>
-
-        <motion.p
-          variants={fadeUp}
-          className="font-mono uppercase tracking-wider text-[clamp(0.8rem,2.4vw,1rem)] font-medium mb-5"
-          style={{ color: 'var(--accent)', ...(reduced ? {} : { z: 45 }) }}
-        >
-          {profile.title} · {profile.company}
-        </motion.p>
 
         <motion.div variants={fadeUp} className="mb-4" style={reduced ? undefined : { z: 30 }}>
           <TypewriterBadge />

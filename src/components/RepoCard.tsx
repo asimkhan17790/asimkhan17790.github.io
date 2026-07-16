@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Star, ExternalLink, Code } from 'lucide-react'
-import { scaleIn } from '../lib/motion'
+import { popIn } from '../lib/motion'
 import { LANG_COLORS } from '../lib/langColors'
 import { useTilt } from '../hooks/useTilt'
 import type { GithubRepo } from '../hooks/useGithubRepos'
@@ -16,7 +16,8 @@ export default function RepoCard({ repo }: Props) {
       href={repo.html_url}
       target="_blank"
       rel="noopener noreferrer"
-      variants={scaleIn}
+      variants={popIn}
+      whileHover={{ y: -5, scale: 1.03, transition: { type: 'spring', stiffness: 400, damping: 18 } }}
       style={{ background: 'var(--card)', ...tilt.style }}
       onMouseMove={tilt.onMouseMove}
       onMouseLeave={tilt.onMouseLeave}

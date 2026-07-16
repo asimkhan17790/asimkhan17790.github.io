@@ -33,7 +33,7 @@ export default function IdeaStream({ theme }: Props) {
     const dark = theme === 'dark'
     const trailColor = dark ? '0, 224, 90' : '21, 128, 61'
     const headColor = dark ? '190, 255, 205' : '5, 46, 22'
-    const baseAlpha = dark ? 0.4 : 0.35
+    const baseAlpha = dark ? 0.4 : 0.42
 
     let width = 0
     let height = 0

@@ -9,7 +9,7 @@
     --muted: #6B7280;
     --accent: #374151;
     --card: #FFFFFF;
-    --border: #E4E4E7;
+    --border: #D4D4D8;
     --shimmer-hi: #9ca3af;
     --spark: #B45309;
     --glass-hi: rgba(255, 255, 255, 0.65);
@@ -118,6 +118,29 @@
   }
 
   .spotlight-card:hover::before {
+    opacity: 1;
+  }
+
+  .spotlight-hero {
+    position: relative;
+  }
+
+  .spotlight-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background: radial-gradient(
+      560px circle at var(--mx, 50%) var(--my, 50%),
+      color-mix(in srgb, var(--spark) 9%, transparent),
+      transparent 65%
+    );
+    pointer-events: none;
+  }
+
+  .spotlight-hero:hover::before {
     opacity: 1;
   }
 
