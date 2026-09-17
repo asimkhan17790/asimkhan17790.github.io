@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-15T04:44:00.000Z",
+  "title": "Design System: Asim Khan — Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "signal-amber": { "role": "primary", "displayName": "Signal Amber", "canonical": "#FBBF24", "tonalRamp": ["#4A2E05", "#7A4A08", "#A9660B", "#B45309", "#D9910F", "#F0AC1C", "#FBBF24", "#FDE0A0"] },
+      "void-charcoal": { "role": "neutral", "displayName": "Void Charcoal", "canonical": "#18181B", "tonalRamp": ["#0A0A0B", "#18181B", "#232326", "#3F3F46", "#6B7280", "#9CA3AF", "#D1D5DB", "#F4F4F5"] },
+      "panel-charcoal": { "role": "neutral", "displayName": "Panel Charcoal", "canonical": "#27272A", "tonalRamp": ["#0A0A0B", "#18181B", "#232326", "#27272A", "#3F3F46", "#6B7280", "#9CA3AF", "#FFFFFF"] },
+      "terminal-white": { "role": "neutral", "displayName": "Terminal White", "canonical": "#F4F4F5", "tonalRamp": ["#111111", "#27272A", "#3F3F46", "#6B7280", "#9CA3AF", "#D1D5DB", "#F4F4F5", "#FFFFFF"] },
+      "dim-gray": { "role": "neutral", "displayName": "Dim Gray", "canonical": "#9CA3AF", "tonalRamp": ["#111111", "#374151", "#4B5563", "#6B7280", "#9CA3AF", "#C0C4CC", "#E4E4E7", "#F4F4F5"] },
+      "cool-steel": { "role": "secondary", "displayName": "Cool Steel", "canonical": "#D1D5DB", "tonalRamp": ["#111827", "#1F2937", "#374151", "#4B5563", "#9CA3AF", "#D1D5DB", "#E5E7EB", "#F9FAFB"] },
+      "seam-gray": { "role": "neutral", "displayName": "Seam Gray", "canonical": "#3F3F46", "tonalRamp": ["#18181B", "#27272A", "#3F3F46", "#52525B", "#71717A", "#A1A1AA", "#D4D4D8", "#E4E4E7"] },
+      "shimmer-white": { "role": "neutral", "displayName": "Shimmer White", "canonical": "#FFFFFF", "tonalRamp": ["#D1D5DB", "#E5E7EB", "#F1F1F2", "#F4F4F5", "#F8F8F9", "#FAFAFA", "#FDFDFD", "#FFFFFF"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero name only, rendered with the text-shimmer sweep animation." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles, revealed word-by-word on scroll into view via SectionHeading." },
+      "body": { "displayName": "Body", "purpose": "Bio copy, descriptions, card text. Secondary instances drop to Dim Gray." },
+      "label": { "displayName": "Label / Mono", "purpose": "Eyebrows, nav wordmark, typewriter role badge, card metadata — anything structural rather than prose." }
+    },
+    "shadows": [
+      { "name": "glass-ambient", "value": "inset 0 1px 0 var(--glass-sheen), inset 0 -1px 1px rgba(0,0,0,0.1), 0 8px 24px -10px var(--glass-shadow)", "purpose": "Rest-state shadow beneath every .glass-btn surface." },
+      { "name": "glass-ambient-hover", "value": "inset 0 1px 0 var(--glass-sheen), inset 0 -1px 1px rgba(0,0,0,0.1), 0 14px 32px -10px var(--glass-shadow)", "purpose": "Deepened shadow on .glass-btn:hover, paired with a 2px lift." },
+      { "name": "accent-glow", "value": "0 0 40px -10px var(--accent)", "purpose": "Diffuse halo behind accent-marked elements (.accent-glow utility)." }
+    ],
+    "motion": [
+      { "name": "ease-word-reveal", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Section heading word-stagger reveal (SectionHeading)." },
+      { "name": "spring-badge", "value": "type: spring, stiffness: 300, damping: 20", "purpose": "SkillBadge hover lift/scale/glow response." },
+      { "name": "spring-nav-pill", "value": "type: spring, stiffness: 350, damping: 30", "purpose": "Active nav pill sliding between links (layoutId=\"nav-pill\")." },
+      { "name": "spring-magnetic", "value": "type: spring, stiffness: 200, damping: 20", "purpose": "MagneticButton cursor-follow spring on hero CTAs." },
+      { "name": "spring-tilt", "value": "type: spring, stiffness: 90, damping: 20", "purpose": "Hero mouse-tracking 3D parallax lean." },
+      { "name": "duration-glass-transition", "value": "0.2s ease", "purpose": "Border-color, box-shadow, color, and translate transitions on .glass-btn." },
+      { "name": "duration-shimmer", "value": "5s linear infinite", "purpose": "Text-shimmer sweep across the hero name." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Glass Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Frosted-glass CTA button with brand-tinted background, used for Resume/LinkedIn/GitHub in the hero.",
+      "html": "<a class=\"ds-glass-btn\" href=\"#\">Resume</a>",
+      "css": ".ds-glass-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 12px; font-size: 14px; font-weight: 500; color: #F4F4F5; border: 1px solid rgba(255,255,255,0.18); background: linear-gradient(160deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.03) 55%, rgba(255,255,255,0.14) 130%), color-mix(in srgb, #3F3F46 62%, transparent); backdrop-filter: blur(16px) saturate(1.7); -webkit-backdrop-filter: blur(16px) saturate(1.7); box-shadow: inset 0 1px 0 rgba(255,255,255,0.32), inset 0 -1px 1px rgba(0,0,0,0.1), 0 8px 24px -10px rgba(0,0,0,0.5); transition: border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, translate 0.2s ease; text-decoration: none; } .ds-glass-btn:hover, .ds-glass-btn:focus-visible { translate: 0 -2px; border-color: rgba(255,255,255,0.38); box-shadow: inset 0 1px 0 rgba(255,255,255,0.32), inset 0 -1px 1px rgba(0,0,0,0.1), 0 14px 32px -10px rgba(0,0,0,0.5); outline: none; }"
+    },
+    {
+      "name": "Active Glass Button (Signal Amber)",
+      "kind": "button",
+      "refersTo": "button-primary-hover",
+      "description": "Active/selected state used for the current nav link pill and selected filter pills — tint shifts to Signal Amber.",
+      "html": "<button class=\"ds-glass-btn-active\">Projects</button>",
+      "css": ".ds-glass-btn-active { display: inline-flex; align-items: center; padding: 6px 14px; border-radius: 8px; font-size: 14px; font-weight: 500; color: #18181B; border: 1px solid color-mix(in srgb, #FBBF24 55%, rgba(255,255,255,0.18)); background: linear-gradient(160deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.03) 55%, rgba(255,255,255,0.14) 130%), color-mix(in srgb, #FBBF24 62%, transparent); backdrop-filter: blur(16px) saturate(1.7); box-shadow: inset 0 1px 0 rgba(255,255,255,0.32), inset 0 -1px 1px rgba(0,0,0,0.1), 0 6px 22px -8px rgba(251,191,36,0.55); transition: box-shadow 0.2s ease, translate 0.2s ease; cursor: pointer; }"
+    },
+    {
+      "name": "Spotlight Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Repo/project/education card with a cursor-tracked Signal Amber spotlight glow and 3D tilt on hover.",
+      "html": "<a class=\"ds-card\" href=\"#\"><div class=\"ds-card-row\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#D1D5DB\" stroke-width=\"2\"><path d=\"M8 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3\"/><path d=\"M16 3h5v5\"/><path d=\"M10 14 21 3\"/></svg><span class=\"ds-card-title\">project-name</span></div><p class=\"ds-card-desc\">Short project description text goes here, clamped to three lines.</p></a>",
+      "css": ".ds-card { position: relative; overflow: hidden; display: block; padding: 20px; border-radius: 12px; border: 1px solid #3F3F46; background: #27272A; text-decoration: none; color: inherit; } .ds-card::before { content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity 0.35s ease; background: radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, #FBBF24 13%, transparent), transparent 65%); pointer-events: none; } .ds-card:hover::before, .ds-card:focus-visible::before { opacity: 1; } .ds-card-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; } .ds-card-title { font-size: 14px; font-weight: 500; color: #F4F4F5; } .ds-card-desc { font-size: 12px; color: #9CA3AF; line-height: 1.6; }"
+    },
+    {
+      "name": "Skill Badge",
+      "kind": "chip",
+      "refersTo": "badge",
+      "description": "Small pill for skill/tag lists with a springy hover lift and accent glow.",
+      "html": "<span class=\"ds-badge\">TypeScript</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 8px; font-size: 14px; font-weight: 500; border: 1px solid #3F3F46; background: #27272A; color: #F4F4F5; transition: transform 0.2s cubic-bezier(0.16,1,0.3,1), box-shadow 0.2s ease; cursor: default; } .ds-badge:hover, .ds-badge:focus-visible { transform: translateY(-2px) scale(1.05); box-shadow: 0 0 14px -4px #D1D5DB; }"
+    },
+    {
+      "name": "Nav Active Pill",
+      "kind": "nav",
+      "refersTo": "button-primary-hover",
+      "description": "The active-link indicator in the top navigation — a glass pill that slides between links.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link ds-nav-link-active\">About</a><a class=\"ds-nav-link\">Experience</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 4px; padding: 8px; background: color-mix(in srgb, #18181B 85%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid #3F3F46; } .ds-nav-link { position: relative; padding: 6px 12px; border-radius: 8px; font-size: 14px; color: #9CA3AF; text-decoration: none; } .ds-nav-link-active { color: #D1D5DB; font-weight: 500; background: linear-gradient(160deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.03) 55%, rgba(255,255,255,0.14) 130%), color-mix(in srgb, #3F3F46 62%, transparent); backdrop-filter: blur(16px) saturate(1.7); border: 1px solid rgba(255,255,255,0.18); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Terminal",
+    "overview": "The site reads like a late-night IDE window: a dark, low-saturation neutral field, monospace labels, and a single amber signal cutting through it — the cursor blink, the status light, the idea that just landed. It is the visual argument for the site's positioning: a VP who still ships code doesn't need a loud interface to prove it, he needs a precise one. Panels are frosted glass, not flat cards, because depth here comes from material and motion (blur, tilt, z-translate), never from decoration piled on top of content.\n\nThe system explicitly rejects the generic SaaS-template portfolio (cookie-cutter card grids, gradient-clip hero text, stock \"available for hire\" badges) and the overloaded resume-dump (walls of unstyled text, no hierarchy). Every glass surface, tilt, and amber glow exists to reinforce technical credibility for a hiring-manager audience skimming fast — not to perform as a creative-agency showcase.",
+    "keyCharacteristics": [
+      "Dark-by-default (data-theme=\"dark\" is the site's canonical state; light is a full parallel theme, not an afterthought)",
+      "One accent color (Signal Amber) marks \"idea\" moments only — eyebrows, active states, glow",
+      "Depth comes from glass blur, 3D tilt, and z-translate layering, not drop shadows",
+      "Monospace type marks anything structural or labeled; Inter carries all reading content"
+    ],
+    "rules": [
+      { "name": "The One Spark Rule", "body": "Signal Amber marks a single \"idea\" moment per view — it is never a background fill, never used for more than one element's active state at a time. Its rarity is what makes it read as a signal instead of a decoration.", "section": "colors" },
+      { "name": "The Mono-Marks-Structure Rule", "body": "If a piece of text is metadata, a label, or a system element — not prose the visitor reads for meaning — it's set in JetBrains Mono, uppercase, tracked wide. Everything else is Inter.", "section": "typography" },
+      { "name": "The Motion-Over-Shadow Rule", "body": "Depth is earned by moving toward the viewer (tilt, z-translate, blur), not by stacking darker shadows. A flat element with no motion stays visually flat — that's the honest state, not a bug to shadow away.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do reserve Signal Amber (#FBBF24 / #B45309) for a single \"idea\" moment per view — eyebrow dash, active nav pill, spotlight glow, timeline pulse.",
+      "Do build new elevated surfaces as .glass-btn-style glass (blur + sheen + translucent border) rather than flat cards with drop shadows.",
+      "Do set any structural/metadata text in JetBrains Mono, uppercase, wide tracking; keep all prose in Inter.",
+      "Do give every new motion effect a prefers-reduced-motion fallback — the video background, idea-stream canvas, and 3D tilt already do this and any addition must match.",
+      "Do convey depth through tilt, z-translate, and blur before reaching for a shadow."
+    ],
+    "donts": [
+      "Don't build a generic SaaS-template portfolio: no identical icon-heading-text card grids, no background-clip: text gradient headlines, no stock \"available for hire\" badge scaffolding.",
+      "Don't ship an overloaded resume-dump: no unstyled walls of CV text with flat hierarchy.",
+      "Don't add hard drop shadows as a default elevation strategy; depth here is motion-and-material, not box-shadow stacking.",
+      "Don't introduce a second saturated accent color alongside Signal Amber — the neutral field only works because the interruption stays singular.",
+      "Don't let new motion perform as agency/creative-studio spectacle; every animation must trace back to reinforcing technical credibility for a hiring-manager audience."
+    ]
+  }
+}

@@ -4,65 +4,6 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "portfolio_tech_stack",
-        "label": "Portfolio Tech Stack",
-        "nodes": [
-          "tech_react",
-          "tech_typescript",
-          "tech_vite",
-          "tech_tailwind",
-          "tech_framer_motion",
-          "tech_github_pages"
-        ],
-        "relation": "implement",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "README.md"
-      },
-      {
-        "id": "page_section_components",
-        "label": "Page Section Components",
-        "nodes": [
-          "component_hero",
-          "component_about",
-          "component_experience",
-          "component_skills",
-          "component_projects",
-          "component_education",
-          "component_contact"
-        ],
-        "relation": "implement",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "README.md"
-      },
-      {
-        "id": "employer_logos",
-        "label": "Employer Brand Logos",
-        "nodes": [
-          "gs_logo",
-          "accenture_logo",
-          "citi_logo",
-          "noknok_logo"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "README.md"
-      },
-      {
-        "id": "education_logos",
-        "label": "Education Institution Logos",
-        "nodes": [
-          "aktu_logo",
-          "nu_wordmark"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "README.md"
-      },
-      {
         "id": "hero_ghost_layers",
         "label": "Hero Ghost Background Layer Stack",
         "nodes": [
@@ -75,6 +16,51 @@
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
         "source_file": "docs/superpowers/plans/2026-05-12-hero-ghost-background.md"
+      },
+      {
+        "id": "reduced_motion_accessibility_pattern",
+        "label": "Reduced-Motion Accessibility Pattern",
+        "nodes": [
+          "product_accessibility_inclusion",
+          "design_dos_donts",
+          "readme_video_background_behavior",
+          "readme_idea_stream_behavior",
+          "readme_3d_depth_behavior"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "PRODUCT.md"
+      },
+      {
+        "id": "night_terminal_design_identity",
+        "label": "Night Terminal Design Identity",
+        "nodes": [
+          "design_night_terminal",
+          "design_signal_amber",
+          "design_typography",
+          "product_positioning",
+          "product_brand_personality"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "DESIGN.md"
+      },
+      {
+        "id": "frontend_tech_stack",
+        "label": "Frontend Tech Stack Bundle",
+        "nodes": [
+          "readme_react",
+          "readme_typescript",
+          "readme_vite",
+          "readme_tailwindcss",
+          "readme_framermotion"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9,
+        "source_file": "README.md"
       }
     ]
   },
@@ -85,7 +71,7 @@
       "source_file": "tailwind.config.ts",
       "source_location": "L1",
       "id": "tailwind_config_ts",
-      "community": 20,
+      "community": 23,
       "norm_label": "tailwind.config.ts"
     },
     {
@@ -94,7 +80,7 @@
       "source_file": "vite.config.ts",
       "source_location": "L1",
       "id": "vite_config_ts",
-      "community": 21,
+      "community": 24,
       "norm_label": "vite.config.ts"
     },
     {
@@ -103,7 +89,7 @@
       "source_file": "postcss.config.js",
       "source_location": "L1",
       "id": "postcss_config_js",
-      "community": 22,
+      "community": 25,
       "norm_label": "postcss.config.js"
     },
     {
@@ -112,7 +98,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/App.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_app_tsx",
-      "community": 23,
+      "community": 26,
       "norm_label": "app.tsx"
     },
     {
@@ -121,7 +107,7 @@
       "source_file": "src/main.tsx",
       "source_location": "L1",
       "id": "src_main_tsx",
-      "community": 24,
+      "community": 27,
       "norm_label": "main.tsx"
     },
     {
@@ -130,7 +116,7 @@
       "source_file": "src/vite-env.d.ts",
       "source_location": "L1",
       "id": "src_vite_env_d_ts",
-      "community": 25,
+      "community": 28,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -139,7 +125,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Projects.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_projects_tsx",
-      "community": 26,
+      "community": 29,
       "norm_label": "projects.tsx"
     },
     {
@@ -148,25 +134,25 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_hero_tsx",
-      "community": 3,
+      "community": 5,
       "norm_label": "hero.tsx"
     },
     {
       "label": "onMove()",
       "file_type": "code",
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
-      "source_location": "L96",
+      "source_location": "L83",
       "id": "hero_onmove",
-      "community": 3,
+      "community": 5,
       "norm_label": "onmove()"
     },
     {
       "label": "onLeave()",
       "file_type": "code",
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
-      "source_location": "L103",
+      "source_location": "L90",
       "id": "hero_onleave",
-      "community": 3,
+      "community": 5,
       "norm_label": "onleave()"
     },
     {
@@ -175,7 +161,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Nav.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_nav_tsx",
-      "community": 27,
+      "community": 30,
       "norm_label": "nav.tsx"
     },
     {
@@ -184,7 +170,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Experience.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_experience_tsx",
-      "community": 28,
+      "community": 31,
       "norm_label": "experience.tsx"
     },
     {
@@ -193,7 +179,7 @@
       "source_file": "src/components/LogoBadge.tsx",
       "source_location": "L1",
       "id": "src_components_logobadge_tsx",
-      "community": 5,
+      "community": 8,
       "norm_label": "logobadge.tsx"
     },
     {
@@ -202,7 +188,7 @@
       "source_file": "src/components/LogoBadge.tsx",
       "source_location": "L6",
       "id": "logobadge_logobadge",
-      "community": 5,
+      "community": 8,
       "norm_label": "logobadge()"
     },
     {
@@ -211,7 +197,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/RepoCard.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_repocard_tsx",
-      "community": 29,
+      "community": 32,
       "norm_label": "repocard.tsx"
     },
     {
@@ -220,7 +206,7 @@
       "source_file": "src/components/SkillBadge.tsx",
       "source_location": "L1",
       "id": "src_components_skillbadge_tsx",
-      "community": 6,
+      "community": 9,
       "norm_label": "skillbadge.tsx"
     },
     {
@@ -229,7 +215,7 @@
       "source_file": "src/components/SkillBadge.tsx",
       "source_location": "L8",
       "id": "skillbadge_skillbadge",
-      "community": 6,
+      "community": 9,
       "norm_label": "skillbadge()"
     },
     {
@@ -238,7 +224,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ScrollProgress.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_scrollprogress_tsx",
-      "community": 7,
+      "community": 10,
       "norm_label": "scrollprogress.tsx"
     },
     {
@@ -247,7 +233,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ScrollProgress.tsx",
       "source_location": "L3",
       "id": "scrollprogress_scrollprogress",
-      "community": 7,
+      "community": 10,
       "norm_label": "scrollprogress()"
     },
     {
@@ -256,7 +242,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/IdeaStream.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_ideastream_tsx",
-      "community": 8,
+      "community": 11,
       "norm_label": "ideastream.tsx"
     },
     {
@@ -265,7 +251,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/IdeaStream.tsx",
       "source_location": "L21",
       "id": "ideastream_ideastream",
-      "community": 8,
+      "community": 11,
       "norm_label": "ideastream()"
     },
     {
@@ -274,7 +260,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_contact_tsx",
-      "community": 0,
+      "community": 3,
       "norm_label": "contact.tsx"
     },
     {
@@ -283,7 +269,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
       "source_location": "L28",
       "id": "contact_contactcard",
-      "community": 0,
+      "community": 3,
       "norm_label": "contactcard()"
     },
     {
@@ -292,7 +278,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Contact.tsx",
       "source_location": "L65",
       "id": "contact_copyemail",
-      "community": 0,
+      "community": 3,
       "norm_label": "copyemail()"
     },
     {
@@ -301,7 +287,7 @@
       "source_file": "src/components/Section.tsx",
       "source_location": "L1",
       "id": "src_components_section_tsx",
-      "community": 9,
+      "community": 12,
       "norm_label": "section.tsx"
     },
     {
@@ -310,7 +296,7 @@
       "source_file": "src/components/Section.tsx",
       "source_location": "L12",
       "id": "section_section",
-      "community": 9,
+      "community": 12,
       "norm_label": "section()"
     },
     {
@@ -319,16 +305,16 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/SectionHeading.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_sectionheading_tsx",
-      "community": 10,
+      "community": 13,
       "norm_label": "sectionheading.tsx"
     },
     {
       "label": "SectionHeading()",
       "file_type": "code",
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/SectionHeading.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "sectionheading_sectionheading",
-      "community": 10,
+      "community": 13,
       "norm_label": "sectionheading()"
     },
     {
@@ -337,7 +323,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Footer.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_footer_tsx",
-      "community": 11,
+      "community": 14,
       "norm_label": "footer.tsx"
     },
     {
@@ -346,7 +332,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Footer.tsx",
       "source_location": "L7",
       "id": "footer_footer",
-      "community": 11,
+      "community": 14,
       "norm_label": "footer()"
     },
     {
@@ -355,7 +341,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/TimelineItem.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_timelineitem_tsx",
-      "community": 12,
+      "community": 15,
       "norm_label": "timelineitem.tsx"
     },
     {
@@ -364,7 +350,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/TimelineItem.tsx",
       "source_location": "L10",
       "id": "timelineitem_timelineitem",
-      "community": 12,
+      "community": 15,
       "norm_label": "timelineitem()"
     },
     {
@@ -373,7 +359,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ThemeToggle.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_themetoggle_tsx",
-      "community": 13,
+      "community": 16,
       "norm_label": "themetoggle.tsx"
     },
     {
@@ -382,7 +368,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/ThemeToggle.tsx",
       "source_location": "L8",
       "id": "themetoggle_themetoggle",
-      "community": 13,
+      "community": 16,
       "norm_label": "themetoggle()"
     },
     {
@@ -391,7 +377,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Skills.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_skills_tsx",
-      "community": 0,
+      "community": 3,
       "norm_label": "skills.tsx"
     },
     {
@@ -400,7 +386,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Skills.tsx",
       "source_location": "L9",
       "id": "skills_skillgroupcard",
-      "community": 0,
+      "community": 3,
       "norm_label": "skillgroupcard()"
     },
     {
@@ -409,7 +395,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Education.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_education_tsx",
-      "community": 0,
+      "community": 3,
       "norm_label": "education.tsx"
     },
     {
@@ -418,7 +404,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Education.tsx",
       "source_location": "L9",
       "id": "education_educard",
-      "community": 0,
+      "community": 3,
       "norm_label": "educard()"
     },
     {
@@ -427,16 +413,16 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/About.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_about_tsx",
-      "community": 0,
+      "community": 3,
       "norm_label": "about.tsx"
     },
     {
       "label": "ProjectCard()",
       "file_type": "code",
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/About.tsx",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "about_projectcard",
-      "community": 0,
+      "community": 3,
       "norm_label": "projectcard()"
     },
     {
@@ -445,7 +431,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/VideoBackground.tsx",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_videobackground_tsx",
-      "community": 14,
+      "community": 17,
       "norm_label": "videobackground.tsx"
     },
     {
@@ -454,7 +440,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/VideoBackground.tsx",
       "source_location": "L43",
       "id": "videobackground_tick",
-      "community": 14,
+      "community": 17,
       "norm_label": "tick()"
     },
     {
@@ -463,7 +449,7 @@
       "source_file": "src/hooks/useGithubRepos.ts",
       "source_location": "L1",
       "id": "src_hooks_usegithubrepos_ts",
-      "community": 15,
+      "community": 18,
       "norm_label": "usegithubrepos.ts"
     },
     {
@@ -472,7 +458,7 @@
       "source_file": "src/hooks/useGithubRepos.ts",
       "source_location": "L54",
       "id": "usegithubrepos_usegithubrepos",
-      "community": 15,
+      "community": 18,
       "norm_label": "usegithubrepos()"
     },
     {
@@ -481,7 +467,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/hooks/useTilt.ts",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_hooks_usetilt_ts",
-      "community": 0,
+      "community": 3,
       "norm_label": "usetilt.ts"
     },
     {
@@ -490,7 +476,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/hooks/useTilt.ts",
       "source_location": "L7",
       "id": "usetilt_usetilt",
-      "community": 0,
+      "community": 3,
       "norm_label": "usetilt()"
     },
     {
@@ -499,7 +485,7 @@
       "source_file": "src/hooks/useActiveSection.ts",
       "source_location": "L1",
       "id": "src_hooks_useactivesection_ts",
-      "community": 16,
+      "community": 19,
       "norm_label": "useactivesection.ts"
     },
     {
@@ -508,7 +494,7 @@
       "source_file": "src/hooks/useActiveSection.ts",
       "source_location": "L3",
       "id": "useactivesection_useactivesection",
-      "community": 16,
+      "community": 19,
       "norm_label": "useactivesection()"
     },
     {
@@ -517,7 +503,7 @@
       "source_file": "src/hooks/useTheme.ts",
       "source_location": "L1",
       "id": "src_hooks_usetheme_ts",
-      "community": 17,
+      "community": 20,
       "norm_label": "usetheme.ts"
     },
     {
@@ -526,7 +512,7 @@
       "source_file": "src/hooks/useTheme.ts",
       "source_location": "L5",
       "id": "usetheme_usetheme",
-      "community": 17,
+      "community": 20,
       "norm_label": "usetheme()"
     },
     {
@@ -535,7 +521,7 @@
       "source_file": "src/hooks/useCountUp.ts",
       "source_location": "L1",
       "id": "src_hooks_usecountup_ts",
-      "community": 18,
+      "community": 21,
       "norm_label": "usecountup.ts"
     },
     {
@@ -544,7 +530,7 @@
       "source_file": "src/hooks/useCountUp.ts",
       "source_location": "L4",
       "id": "usecountup_usecountup",
-      "community": 18,
+      "community": 21,
       "norm_label": "usecountup()"
     },
     {
@@ -553,16 +539,16 @@
       "source_file": "src/lib/langColors.ts",
       "source_location": "L1",
       "id": "src_lib_langcolors_ts",
-      "community": 30,
+      "community": 33,
       "norm_label": "langcolors.ts"
     },
     {
       "label": "motion.ts",
       "file_type": "code",
-      "source_file": "src/lib/motion.ts",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/lib/motion.ts",
       "source_location": "L1",
-      "id": "src_lib_motion_ts",
-      "community": 31,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_lib_motion_ts",
+      "community": 34,
       "norm_label": "motion.ts"
     },
     {
@@ -571,7 +557,7 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/lib/spotlight.ts",
       "source_location": "L1",
       "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_lib_spotlight_ts",
-      "community": 19,
+      "community": 22,
       "norm_label": "spotlight.ts"
     },
     {
@@ -580,16 +566,16 @@
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/lib/spotlight.ts",
       "source_location": "L4",
       "id": "spotlight_trackspotlight",
-      "community": 19,
+      "community": 22,
       "norm_label": "trackspotlight()"
     },
     {
       "label": "projects.ts",
       "file_type": "code",
-      "source_file": "src/data/projects.ts",
+      "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/data/projects.ts",
       "source_location": "L1",
-      "id": "src_data_projects_ts",
-      "community": 32,
+      "id": "users_maverickhan17_projects_asimkhan17790_github_io_src_data_projects_ts",
+      "community": 35,
       "norm_label": "projects.ts"
     },
     {
@@ -598,7 +584,7 @@
       "source_file": "src/data/education.ts",
       "source_location": "L1",
       "id": "src_data_education_ts",
-      "community": 33,
+      "community": 36,
       "norm_label": "education.ts"
     },
     {
@@ -607,7 +593,7 @@
       "source_file": "src/data/experience.ts",
       "source_location": "L1",
       "id": "src_data_experience_ts",
-      "community": 34,
+      "community": 37,
       "norm_label": "experience.ts"
     },
     {
@@ -616,7 +602,7 @@
       "source_file": "src/data/profile.ts",
       "source_location": "L1",
       "id": "src_data_profile_ts",
-      "community": 35,
+      "community": 38,
       "norm_label": "profile.ts"
     },
     {
@@ -625,47 +611,8 @@
       "source_file": "src/data/skills.ts",
       "source_location": "L1",
       "id": "src_data_skills_ts",
-      "community": 36,
+      "community": 39,
       "norm_label": "skills.ts"
-    },
-    {
-      "label": "README \u2014 Portfolio Project Documentation",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": "Asim Khan",
-      "contributor": null,
-      "community": 2,
-      "norm_label": "readme \u2014 portfolio project documentation",
-      "id": "readme_portfolio"
-    },
-    {
-      "label": "CLAUDE.md \u2014 AI Agent Instructions",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": "Asim Khan",
-      "contributor": null,
-      "community": 2,
-      "norm_label": "claude.md \u2014 ai agent instructions",
-      "id": "claude_md"
-    },
-    {
-      "label": "Hero Ghost Background Implementation Plan",
-      "file_type": "document",
-      "source_file": "docs/superpowers/plans/2026-05-12-hero-ghost-background.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": "Asim Khan",
-      "contributor": null,
-      "community": 4,
-      "norm_label": "hero ghost background implementation plan",
-      "id": "hero_ghost_plan"
     },
     {
       "label": "Asim Khan \u2014 Engineering Vice President",
@@ -676,7 +623,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "asim khan \u2014 engineering vice president",
       "id": "asim_khan_person"
     },
@@ -689,230 +636,22 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "goldman sachs \u2014 financial services organization",
       "id": "goldman_sachs_org"
     },
     {
-      "label": "Goldman Sachs Logo",
-      "file_type": "image",
-      "source_file": "public/gs.jpg",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "goldman sachs logo",
-      "id": "gs_logo"
-    },
-    {
-      "label": "Accenture Logo \u2014 Blue Arrow Brand Mark",
-      "file_type": "image",
-      "source_file": "public/accenture.webp",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "accenture logo \u2014 blue arrow brand mark",
-      "id": "accenture_logo"
-    },
-    {
-      "label": "Citi (Citibank) Logo \u2014 Blue and Red Brand Mark",
-      "file_type": "image",
-      "source_file": "public/citi.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "citi (citibank) logo \u2014 blue and red brand mark",
-      "id": "citi_logo"
-    },
-    {
-      "label": "Nok Nok Labs Logo \u2014 Authentication Technology Company",
-      "file_type": "image",
-      "source_file": "public/noknok.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "nok nok labs logo \u2014 authentication technology company",
-      "id": "noknok_logo"
-    },
-    {
-      "label": "Dr. APJ Abdul Kalam Technical University Logo \u2014 Lucknow, Uttar Pradesh",
-      "file_type": "image",
-      "source_file": "public/Dr._A.P.J._Abdul_Kalam_Technical_University_logo.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "dr. apj abdul kalam technical university logo \u2014 lucknow, uttar pradesh",
-      "id": "aktu_logo"
-    },
-    {
-      "label": "Northeastern University Wordmark \u2014 Notched-N Brand Mark",
-      "file_type": "image",
-      "source_file": "public/NU_RGB_Notched-N_wordmark_RB-1-2.svg",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "northeastern university wordmark \u2014 notched-n brand mark",
-      "id": "nu_wordmark"
-    },
-    {
-      "label": "Favicon SVG \u2014 AK Monogram, Matte Graphite Design",
-      "file_type": "image",
-      "source_file": "public/favicon.svg",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "favicon svg \u2014 ak monogram, matte graphite design",
-      "id": "favicon_svg"
-    },
-    {
-      "label": "Matrix-Style Green Code Rain Background \u2014 Hero Section Image",
-      "file_type": "image",
-      "source_file": "public/asim_image.jpg",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "matrix-style green code rain background \u2014 hero section image",
-      "id": "asim_image_jpg"
-    },
-    {
-      "label": "RGB Mechanical Keyboard \u2014 Tech/Developer Aesthetic Image",
-      "file_type": "image",
-      "source_file": "public/asim_image1.jpg",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 37,
-      "norm_label": "rgb mechanical keyboard \u2014 tech/developer aesthetic image",
-      "id": "asim_image1_jpg"
-    },
-    {
-      "label": "Asim Khan Resume PDF",
+      "label": "Hero Ghost Background Implementation Plan",
       "file_type": "document",
-      "source_file": "public/AsimKhan.pdf",
+      "source_file": "docs/superpowers/plans/2026-05-12-hero-ghost-background.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": "Asim Khan",
       "contributor": null,
-      "community": 2,
-      "norm_label": "asim khan resume pdf",
-      "id": "asimkhan_pdf"
-    },
-    {
-      "label": "LinkedIn Profile PDF",
-      "file_type": "document",
-      "source_file": "public/Linkedin_Profile.pdf",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": "Asim Khan",
-      "contributor": null,
-      "community": 1,
-      "norm_label": "linkedin profile pdf",
-      "id": "linkedin_pdf"
-    },
-    {
-      "label": "React 18 \u2014 UI Framework",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "react 18 \u2014 ui framework",
-      "id": "tech_react"
-    },
-    {
-      "label": "TypeScript \u2014 Type-Safe Language",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "typescript \u2014 type-safe language",
-      "id": "tech_typescript"
-    },
-    {
-      "label": "Vite \u2014 Build Tool",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "vite \u2014 build tool",
-      "id": "tech_vite"
-    },
-    {
-      "label": "Tailwind CSS \u2014 Utility-First Styling",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "tailwind css \u2014 utility-first styling",
-      "id": "tech_tailwind"
-    },
-    {
-      "label": "Framer Motion \u2014 Animation Library",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "framer motion \u2014 animation library",
-      "id": "tech_framer_motion"
-    },
-    {
-      "label": "GitHub Pages \u2014 Deployment Platform",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "github pages \u2014 deployment platform",
-      "id": "tech_github_pages"
+      "community": 6,
+      "norm_label": "hero ghost background implementation plan",
+      "id": "hero_ghost_plan"
     },
     {
       "label": "Rationale: Ghost background chosen for low-opacity fade-in effect preserving text readability",
@@ -923,7 +662,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "rationale: ghost background chosen for low-opacity fade-in effect preserving text readability",
       "id": "rationale_ghost_bg"
     },
@@ -936,12 +675,298 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 40,
       "norm_label": "rationale: radial vignette + bottom gradient chosen to dissolve photo edges into dark ui without hard borders",
       "id": "rationale_vignette"
     },
     {
-      "label": "Rationale: All personal content in src/data/ for CMS-free content updates without touching components",
+      "label": "LinkedIn Profile PDF",
+      "file_type": "document",
+      "source_file": "public/Linkedin_Profile.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Asim Khan",
+      "contributor": null,
+      "community": 4,
+      "norm_label": "linkedin profile pdf",
+      "id": "linkedin_pdf"
+    },
+    {
+      "label": "Asim Khan Resume PDF",
+      "file_type": "document",
+      "source_file": "public/AsimKhan.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Asim Khan",
+      "contributor": null,
+      "community": 41,
+      "norm_label": "asim khan resume pdf",
+      "id": "asimkhan_pdf"
+    },
+    {
+      "label": "RGB Mechanical Keyboard \u2014 Tech/Developer Aesthetic Image",
+      "file_type": "image",
+      "source_file": "public/asim_image1.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 42,
+      "norm_label": "rgb mechanical keyboard \u2014 tech/developer aesthetic image",
+      "id": "asim_image1_jpg"
+    },
+    {
+      "label": "Northeastern University Wordmark \u2014 Notched-N Brand Mark",
+      "file_type": "image",
+      "source_file": "public/NU_RGB_Notched-N_wordmark_RB-1-2.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "northeastern university wordmark \u2014 notched-n brand mark",
+      "id": "nu_wordmark"
+    },
+    {
+      "label": "Goldman Sachs Logo",
+      "file_type": "image",
+      "source_file": "public/gs.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "goldman sachs logo",
+      "id": "gs_logo"
+    },
+    {
+      "label": "Accenture Logo \u2014 Blue Arrow Brand Mark",
+      "file_type": "image",
+      "source_file": "public/accenture.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "accenture logo \u2014 blue arrow brand mark",
+      "id": "accenture_logo"
+    },
+    {
+      "label": "Citi (Citibank) Logo \u2014 Blue and Red Brand Mark",
+      "file_type": "image",
+      "source_file": "public/citi.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "citi (citibank) logo \u2014 blue and red brand mark",
+      "id": "citi_logo"
+    },
+    {
+      "label": "Nok Nok Labs Logo \u2014 Authentication Technology Company",
+      "file_type": "image",
+      "source_file": "public/noknok.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "nok nok labs logo \u2014 authentication technology company",
+      "id": "noknok_logo"
+    },
+    {
+      "label": "Matrix-Style Green Code Rain Background \u2014 Hero Section Image",
+      "file_type": "image",
+      "source_file": "public/asim_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "norm_label": "matrix-style green code rain background \u2014 hero section image",
+      "id": "asim_image_jpg"
+    },
+    {
+      "label": "Dr. APJ Abdul Kalam Technical University Logo \u2014 Lucknow, Uttar Pradesh",
+      "file_type": "image",
+      "source_file": "public/Dr._A.P.J._Abdul_Kalam_Technical_University_logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "dr. apj abdul kalam technical university logo \u2014 lucknow, uttar pradesh",
+      "id": "aktu_logo"
+    },
+    {
+      "label": "Favicon SVG \u2014 AK Monogram, Matte Graphite Design",
+      "file_type": "image",
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "favicon svg \u2014 ak monogram, matte graphite design",
+      "id": "favicon_svg"
+    },
+    {
+      "label": "PRODUCT.md Strategic Design Context",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "product.md strategic design context",
+      "id": "product_document"
+    },
+    {
+      "label": "Register: Brand",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "register: brand",
+      "id": "product_register"
+    },
+    {
+      "label": "Platform: Web",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "platform: web",
+      "id": "product_platform"
+    },
+    {
+      "label": "Users: Hiring Managers & Engineering Peers",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "users: hiring managers & engineering peers",
+      "id": "product_users"
+    },
+    {
+      "label": "Product Purpose",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "product purpose",
+      "id": "product_purpose"
+    },
+    {
+      "label": "Positioning: Proof of a Hands-On Builder",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "positioning: proof of a hands-on builder",
+      "id": "product_positioning"
+    },
+    {
+      "label": "Brand Personality",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "brand personality",
+      "id": "product_brand_personality"
+    },
+    {
+      "label": "Code Tagline: while (alive) { learn(); build(); inspire(); }",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "code tagline: while (alive) { learn(); build(); inspire(); }",
+      "id": "product_tagline"
+    },
+    {
+      "label": "Anti-References",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "anti-references",
+      "id": "product_anti_references"
+    },
+    {
+      "label": "Design Principles",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "design principles",
+      "id": "product_design_principles"
+    },
+    {
+      "label": "Accessibility & Inclusion",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "accessibility & inclusion",
+      "id": "product_accessibility_inclusion"
+    },
+    {
+      "label": "README.md Project Documentation",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": null,
@@ -949,9 +974,646 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
-      "norm_label": "rationale: all personal content in src/data/ for cms-free content updates without touching components",
-      "id": "rationale_data_layer"
+      "community": 0,
+      "norm_label": "readme.md project documentation",
+      "id": "readme_document"
+    },
+    {
+      "label": "Tech Stack Table",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "tech stack table",
+      "id": "readme_tech_stack"
+    },
+    {
+      "label": "React 18",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "react 18",
+      "id": "readme_react"
+    },
+    {
+      "label": "TypeScript",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "typescript",
+      "id": "readme_typescript"
+    },
+    {
+      "label": "Vite Build Tool",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "vite build tool",
+      "id": "readme_vite"
+    },
+    {
+      "label": "Tailwind CSS (dark mode via class)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "tailwind css (dark mode via class)",
+      "id": "readme_tailwindcss"
+    },
+    {
+      "label": "Framer Motion",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "framer motion",
+      "id": "readme_framermotion"
+    },
+    {
+      "label": "GitHub Pages Deployment",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "github pages deployment",
+      "id": "readme_github_pages"
+    },
+    {
+      "label": "Project Structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "project structure",
+      "id": "readme_project_structure"
+    },
+    {
+      "label": "Data Layer (src/data)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 43,
+      "norm_label": "data layer (src/data)",
+      "id": "readme_data_layer"
+    },
+    {
+      "label": "Theme Behavior (localStorage + dark class)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 44,
+      "norm_label": "theme behavior (localstorage + dark class)",
+      "id": "readme_theme_behavior"
+    },
+    {
+      "label": "Active Nav Behavior (IntersectionObserver)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 45,
+      "norm_label": "active nav behavior (intersectionobserver)",
+      "id": "readme_active_nav_behavior"
+    },
+    {
+      "label": "Projects Section Behavior (GitHub API + cache)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 46,
+      "norm_label": "projects section behavior (github api + cache)",
+      "id": "readme_projects_behavior"
+    },
+    {
+      "label": "Animations Behavior (whileInView variants)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 47,
+      "norm_label": "animations behavior (whileinview variants)",
+      "id": "readme_animations_behavior"
+    },
+    {
+      "label": "Video Background Behavior (scroll-reactive)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "video background behavior (scroll-reactive)",
+      "id": "readme_video_background_behavior"
+    },
+    {
+      "label": "Idea Stream Behavior (Matrix-style binary rain)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "idea stream behavior (matrix-style binary rain)",
+      "id": "readme_idea_stream_behavior"
+    },
+    {
+      "label": "3D Depth Behavior (parallax + tilt)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "3d depth behavior (parallax + tilt)",
+      "id": "readme_3d_depth_behavior"
+    },
+    {
+      "label": "Spark Accent Token (--spark, amber)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "spark accent token (--spark, amber)",
+      "id": "readme_spark_accent"
+    },
+    {
+      "label": "npm Commands (dev/build/preview)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "npm commands (dev/build/preview)",
+      "id": "readme_commands"
+    },
+    {
+      "label": "Deployment (push to main)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "deployment (push to main)",
+      "id": "readme_deployment"
+    },
+    {
+      "label": "Resume PDF (public/AsimKhan.pdf)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "resume pdf (public/asimkhan.pdf)",
+      "id": "readme_resume"
+    },
+    {
+      "label": "DESIGN.md Design System",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "design.md design system",
+      "id": "design_document"
+    },
+    {
+      "label": "The Night Terminal (Creative North Star)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "the night terminal (creative north star)",
+      "id": "design_night_terminal"
+    },
+    {
+      "label": "Signal Amber Accent Color",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "signal amber accent color",
+      "id": "design_signal_amber"
+    },
+    {
+      "label": "Void Charcoal (page background)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 48,
+      "norm_label": "void charcoal (page background)",
+      "id": "design_void_charcoal"
+    },
+    {
+      "label": "Panel Charcoal (card background)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 49,
+      "norm_label": "panel charcoal (card background)",
+      "id": "design_panel_charcoal"
+    },
+    {
+      "label": "Terminal White (primary text)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 50,
+      "norm_label": "terminal white (primary text)",
+      "id": "design_terminal_white"
+    },
+    {
+      "label": "Dim Gray (secondary text)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 51,
+      "norm_label": "dim gray (secondary text)",
+      "id": "design_dim_gray"
+    },
+    {
+      "label": "Cool Steel (secondary accent)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 52,
+      "norm_label": "cool steel (secondary accent)",
+      "id": "design_cool_steel"
+    },
+    {
+      "label": "Seam Gray (borders/dividers)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 53,
+      "norm_label": "seam gray (borders/dividers)",
+      "id": "design_seam_gray"
+    },
+    {
+      "label": "Shimmer White (name text-shimmer highlight)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 54,
+      "norm_label": "shimmer white (name text-shimmer highlight)",
+      "id": "design_shimmer_white"
+    },
+    {
+      "label": "The One Spark Rule",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "the one spark rule",
+      "id": "design_one_spark_rule"
+    },
+    {
+      "label": "Typography System (Inter / JetBrains Mono)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "typography system (inter / jetbrains mono)",
+      "id": "design_typography"
+    },
+    {
+      "label": "The Mono-Marks-Structure Rule",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "the mono-marks-structure rule",
+      "id": "design_mono_marks_structure_rule"
+    },
+    {
+      "label": "Elevation System (glass, tilt, z-translate)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "elevation system (glass, tilt, z-translate)",
+      "id": "design_elevation"
+    },
+    {
+      "label": "The Motion-Over-Shadow Rule",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "the motion-over-shadow rule",
+      "id": "design_motion_over_shadow_rule"
+    },
+    {
+      "label": "Buttons Component (.glass-btn)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "buttons component (.glass-btn)",
+      "id": "design_buttons_component"
+    },
+    {
+      "label": "Cards Component (spotlight + tilt)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "cards component (spotlight + tilt)",
+      "id": "design_cards_component"
+    },
+    {
+      "label": "Badges / Chips Component",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "badges / chips component",
+      "id": "design_badges_component"
+    },
+    {
+      "label": "Navigation Component",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "navigation component",
+      "id": "design_navigation_component"
+    },
+    {
+      "label": "Signature Component: Typewriter Role Badge",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "signature component: typewriter role badge",
+      "id": "design_typewriter_role_badge"
+    },
+    {
+      "label": "Do's and Don'ts",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "do's and don'ts",
+      "id": "design_dos_donts"
+    },
+    {
+      "label": "CLAUDE.md Guidance Document",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "claude.md guidance document",
+      "id": "claude_document"
+    },
+    {
+      "label": "CLAUDE.md Commands Section",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "claude.md commands section",
+      "id": "claude_commands"
+    },
+    {
+      "label": "CLAUDE.md Architecture Section",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "claude.md architecture section",
+      "id": "claude_architecture"
+    },
+    {
+      "label": "CLAUDE.md Design Context Section",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "claude.md design context section",
+      "id": "claude_design_context"
+    },
+    {
+      "label": "CLAUDE.md graphify Section",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "claude.md graphify section",
+      "id": "claude_graphify"
+    },
+    {
+      "label": "Coding Background Poster Frame",
+      "file_type": "image",
+      "source_file": "public/videos/coding-bg-poster.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 7,
+      "norm_label": "coding background poster frame",
+      "id": "coding_bg_poster_hero_background"
+    },
+    {
+      "label": "Coding Background Video (coding-bg.mp4)",
+      "file_type": "document",
+      "source_file": "public/videos/coding-bg.mp4",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 7,
+      "norm_label": "coding background video (coding-bg.mp4)",
+      "id": "coding_bg_video"
+    },
+    {
+      "label": "Hero Section Ambient Background",
+      "file_type": "document",
+      "source_file": "public/videos/coding-bg-poster.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 7,
+      "norm_label": "hero section ambient background",
+      "id": "hero_section_background"
     }
   ],
   "links": [
@@ -959,7 +1621,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
-      "source_location": "L96",
+      "source_location": "L83",
       "weight": 1.0,
       "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_hero_tsx",
       "_tgt": "hero_onmove",
@@ -971,7 +1633,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Hero.tsx",
-      "source_location": "L103",
+      "source_location": "L90",
       "weight": 1.0,
       "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_hero_tsx",
       "_tgt": "hero_onleave",
@@ -1079,7 +1741,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/SectionHeading.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_sectionheading_tsx",
       "_tgt": "sectionheading_sectionheading",
@@ -1140,7 +1802,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/Skills.tsx",
-      "source_location": "L14",
+      "source_location": "L11",
       "weight": 1.0,
       "_src": "skills_skillgroupcard",
       "_tgt": "usetilt_usetilt",
@@ -1175,7 +1837,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/maverickhan17/Projects/asimkhan17790.github.io/src/components/About.tsx",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "_src": "users_maverickhan17_projects_asimkhan17790_github_io_src_components_about_tsx",
       "_tgt": "about_projectcard",
@@ -1283,114 +1945,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "line 17",
-      "weight": 1.0,
-      "_src": "readme_portfolio",
-      "_tgt": "claude_md",
-      "source": "readme_portfolio",
-      "target": "claude_md"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "Tech Stack table",
-      "weight": 1.0,
-      "_src": "readme_portfolio",
-      "_tgt": "tech_react",
-      "source": "readme_portfolio",
-      "target": "tech_react"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "Tech Stack table",
-      "weight": 1.0,
-      "_src": "readme_portfolio",
-      "_tgt": "tech_typescript",
-      "source": "readme_portfolio",
-      "target": "tech_typescript"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "Tech Stack table",
-      "weight": 1.0,
-      "_src": "readme_portfolio",
-      "_tgt": "tech_vite",
-      "source": "readme_portfolio",
-      "target": "tech_vite"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "Tech Stack table",
-      "weight": 1.0,
-      "_src": "readme_portfolio",
-      "_tgt": "tech_tailwind",
-      "source": "readme_portfolio",
-      "target": "tech_tailwind"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "Tech Stack table",
-      "weight": 1.0,
-      "_src": "readme_portfolio",
-      "_tgt": "tech_framer_motion",
-      "source": "readme_portfolio",
-      "target": "tech_framer_motion"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "Tech Stack table",
-      "weight": 1.0,
-      "_src": "readme_portfolio",
-      "_tgt": "tech_github_pages",
-      "source": "readme_portfolio",
-      "target": "tech_github_pages"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "Resume section",
-      "weight": 1.0,
-      "_src": "readme_portfolio",
-      "_tgt": "asimkhan_pdf",
-      "source": "readme_portfolio",
-      "target": "asimkhan_pdf"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/superpowers/plans/2026-05-12-hero-ghost-background.md",
-      "source_location": "Goal statement",
-      "weight": 1.0,
-      "_src": "hero_ghost_plan",
-      "_tgt": "asim_image_jpg",
-      "source": "hero_ghost_plan",
-      "target": "asim_image_jpg"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "index.html",
       "source_location": "script[type=application/ld+json]",
       "weight": 1.0,
@@ -1473,18 +2027,6 @@
     },
     {
       "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "Resume section",
-      "weight": 1.0,
-      "_src": "asim_khan_person",
-      "_tgt": "asimkhan_pdf",
-      "source": "asim_khan_person",
-      "target": "asimkhan_pdf"
-    },
-    {
-      "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "index.html",
@@ -1508,78 +2050,835 @@
       "target": "favicon_svg"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-12-hero-ghost-background.md",
+      "source_location": "Goal statement",
+      "weight": 1.0,
+      "_src": "hero_ghost_plan",
+      "_tgt": "asim_image_jpg",
+      "source": "hero_ghost_plan",
+      "target": "asim_image_jpg"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/superpowers/plans/2026-05-12-hero-ghost-background.md",
       "source_location": "Goal statement",
       "weight": 1.0,
-      "_src": "asim_image_jpg",
-      "_tgt": "rationale_ghost_bg",
-      "source": "asim_image_jpg",
-      "target": "rationale_ghost_bg"
+      "_src": "rationale_ghost_bg",
+      "_tgt": "asim_image_jpg",
+      "source": "rationale_ghost_bg",
+      "target": "asim_image_jpg"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_register",
+      "source": "product_document",
+      "target": "product_register"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_platform",
+      "source": "product_document",
+      "target": "product_platform"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_users",
+      "source": "product_document",
+      "target": "product_users"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_purpose",
+      "source": "product_document",
+      "target": "product_purpose"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_positioning",
+      "source": "product_document",
+      "target": "product_positioning"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_brand_personality",
+      "source": "product_document",
+      "target": "product_brand_personality"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_anti_references",
+      "source": "product_document",
+      "target": "product_anti_references"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_design_principles",
+      "source": "product_document",
+      "target": "product_design_principles"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "product_accessibility_inclusion",
+      "source": "product_document",
+      "target": "product_accessibility_inclusion"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_document",
+      "_tgt": "claude_design_context",
+      "source": "product_document",
+      "target": "claude_design_context"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_purpose",
+      "_tgt": "readme_resume",
+      "source": "product_purpose",
+      "target": "readme_resume"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_positioning",
+      "_tgt": "design_night_terminal",
+      "source": "product_positioning",
+      "target": "design_night_terminal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_brand_personality",
+      "_tgt": "product_tagline",
+      "source": "product_brand_personality",
+      "target": "product_tagline"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_brand_personality",
+      "_tgt": "design_one_spark_rule",
+      "source": "product_brand_personality",
+      "target": "design_one_spark_rule"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_brand_personality",
+      "_tgt": "design_typewriter_role_badge",
+      "source": "product_brand_personality",
+      "target": "design_typewriter_role_badge"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_anti_references",
+      "_tgt": "design_dos_donts",
+      "source": "product_anti_references",
+      "target": "design_dos_donts"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_anti_references",
+      "_tgt": "design_night_terminal",
+      "source": "product_anti_references",
+      "target": "design_night_terminal"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_design_principles",
+      "_tgt": "readme_video_background_behavior",
+      "source": "product_design_principles",
+      "target": "readme_video_background_behavior"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_design_principles",
+      "_tgt": "readme_3d_depth_behavior",
+      "source": "product_design_principles",
+      "target": "readme_3d_depth_behavior"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_design_principles",
+      "_tgt": "design_motion_over_shadow_rule",
+      "source": "product_design_principles",
+      "target": "design_motion_over_shadow_rule"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_design_principles",
+      "_tgt": "design_one_spark_rule",
+      "source": "product_design_principles",
+      "target": "design_one_spark_rule"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_accessibility_inclusion",
+      "_tgt": "readme_video_background_behavior",
+      "source": "product_accessibility_inclusion",
+      "target": "readme_video_background_behavior"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_accessibility_inclusion",
+      "_tgt": "readme_idea_stream_behavior",
+      "source": "product_accessibility_inclusion",
+      "target": "readme_idea_stream_behavior"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "product_accessibility_inclusion",
+      "_tgt": "readme_3d_depth_behavior",
+      "source": "product_accessibility_inclusion",
+      "target": "readme_3d_depth_behavior"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_document",
+      "_tgt": "readme_tech_stack",
+      "source": "readme_document",
+      "target": "readme_tech_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_document",
+      "_tgt": "readme_project_structure",
+      "source": "readme_document",
+      "target": "readme_project_structure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_document",
+      "_tgt": "readme_commands",
+      "source": "readme_document",
+      "target": "readme_commands"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_document",
+      "_tgt": "readme_deployment",
+      "source": "readme_document",
+      "target": "readme_deployment"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_document",
+      "_tgt": "readme_resume",
+      "source": "readme_document",
+      "target": "readme_resume"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_document",
+      "_tgt": "claude_architecture",
+      "source": "readme_document",
+      "target": "claude_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_tech_stack",
+      "_tgt": "readme_react",
+      "source": "readme_tech_stack",
+      "target": "readme_react"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_tech_stack",
+      "_tgt": "readme_typescript",
+      "source": "readme_tech_stack",
+      "target": "readme_typescript"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_tech_stack",
+      "_tgt": "readme_vite",
+      "source": "readme_tech_stack",
+      "target": "readme_vite"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_tech_stack",
+      "_tgt": "readme_tailwindcss",
+      "source": "readme_tech_stack",
+      "target": "readme_tailwindcss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_tech_stack",
+      "_tgt": "readme_framermotion",
+      "source": "readme_tech_stack",
+      "target": "readme_framermotion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_tech_stack",
+      "_tgt": "readme_github_pages",
+      "source": "readme_tech_stack",
+      "target": "readme_github_pages"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_vite",
+      "_tgt": "readme_commands",
+      "source": "readme_vite",
+      "target": "readme_commands"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_github_pages",
+      "_tgt": "readme_deployment",
+      "source": "readme_github_pages",
+      "target": "readme_deployment"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_video_background_behavior",
+      "_tgt": "design_dos_donts",
+      "source": "readme_video_background_behavior",
+      "target": "design_dos_donts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_idea_stream_behavior",
+      "_tgt": "design_dos_donts",
+      "source": "readme_idea_stream_behavior",
+      "target": "design_dos_donts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_3d_depth_behavior",
+      "_tgt": "design_dos_donts",
+      "source": "readme_3d_depth_behavior",
+      "target": "design_dos_donts"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_spark_accent",
+      "_tgt": "design_signal_amber",
+      "source": "readme_spark_accent",
+      "target": "design_signal_amber"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_commands",
+      "_tgt": "claude_commands",
+      "source": "readme_commands",
+      "target": "claude_commands"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_night_terminal",
+      "source": "design_document",
+      "target": "design_night_terminal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_signal_amber",
+      "source": "design_document",
+      "target": "design_signal_amber"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_typography",
+      "source": "design_document",
+      "target": "design_typography"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_elevation",
+      "source": "design_document",
+      "target": "design_elevation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_buttons_component",
+      "source": "design_document",
+      "target": "design_buttons_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_cards_component",
+      "source": "design_document",
+      "target": "design_cards_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_badges_component",
+      "source": "design_document",
+      "target": "design_badges_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_navigation_component",
+      "source": "design_document",
+      "target": "design_navigation_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_typewriter_role_badge",
+      "source": "design_document",
+      "target": "design_typewriter_role_badge"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "design_dos_donts",
+      "source": "design_document",
+      "target": "design_dos_donts"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_document",
+      "_tgt": "claude_design_context",
+      "source": "design_document",
+      "target": "claude_design_context"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_night_terminal",
+      "_tgt": "claude_design_context",
+      "source": "design_night_terminal",
+      "target": "claude_design_context"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_signal_amber",
+      "_tgt": "design_one_spark_rule",
+      "source": "design_signal_amber",
+      "target": "design_one_spark_rule"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_signal_amber",
+      "_tgt": "design_buttons_component",
+      "source": "design_signal_amber",
+      "target": "design_buttons_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_signal_amber",
+      "_tgt": "design_cards_component",
+      "source": "design_signal_amber",
+      "target": "design_cards_component"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_typography",
+      "_tgt": "design_mono_marks_structure_rule",
+      "source": "design_typography",
+      "target": "design_mono_marks_structure_rule"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_elevation",
+      "_tgt": "design_motion_over_shadow_rule",
+      "source": "design_elevation",
+      "target": "design_motion_over_shadow_rule"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "design_buttons_component",
+      "_tgt": "design_navigation_component",
+      "source": "design_buttons_component",
+      "target": "design_navigation_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "claude_document",
+      "_tgt": "claude_commands",
+      "source": "claude_document",
+      "target": "claude_commands"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "claude_document",
+      "_tgt": "claude_architecture",
+      "source": "claude_document",
+      "target": "claude_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "claude_document",
+      "_tgt": "claude_design_context",
+      "source": "claude_document",
+      "target": "claude_design_context"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "claude_document",
+      "_tgt": "claude_graphify",
+      "source": "claude_document",
+      "target": "claude_graphify"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/videos/coding-bg-poster.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "coding_bg_poster_hero_background",
+      "_tgt": "coding_bg_video",
+      "source": "coding_bg_poster_hero_background",
+      "target": "coding_bg_video"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/videos/coding-bg-poster.jpg",
+      "source_location": null,
+      "weight": 0.75,
+      "_src": "coding_bg_poster_hero_background",
+      "_tgt": "hero_section_background",
+      "source": "coding_bg_poster_hero_background",
+      "target": "hero_section_background"
     }
   ],
   "hyperedges": [
-    {
-      "id": "portfolio_tech_stack",
-      "label": "Portfolio Tech Stack",
-      "nodes": [
-        "tech_react",
-        "tech_typescript",
-        "tech_vite",
-        "tech_tailwind",
-        "tech_framer_motion",
-        "tech_github_pages"
-      ],
-      "relation": "implement",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md"
-    },
-    {
-      "id": "page_section_components",
-      "label": "Page Section Components",
-      "nodes": [
-        "component_hero",
-        "component_about",
-        "component_experience",
-        "component_skills",
-        "component_projects",
-        "component_education",
-        "component_contact"
-      ],
-      "relation": "implement",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md"
-    },
-    {
-      "id": "employer_logos",
-      "label": "Employer Brand Logos",
-      "nodes": [
-        "gs_logo",
-        "accenture_logo",
-        "citi_logo",
-        "noknok_logo"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "README.md"
-    },
-    {
-      "id": "education_logos",
-      "label": "Education Institution Logos",
-      "nodes": [
-        "aktu_logo",
-        "nu_wordmark"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "README.md"
-    },
     {
       "id": "hero_ghost_layers",
       "label": "Hero Ghost Background Layer Stack",
@@ -1593,6 +2892,51 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/superpowers/plans/2026-05-12-hero-ghost-background.md"
+    },
+    {
+      "id": "reduced_motion_accessibility_pattern",
+      "label": "Reduced-Motion Accessibility Pattern",
+      "nodes": [
+        "product_accessibility_inclusion",
+        "design_dos_donts",
+        "readme_video_background_behavior",
+        "readme_idea_stream_behavior",
+        "readme_3d_depth_behavior"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "PRODUCT.md"
+    },
+    {
+      "id": "night_terminal_design_identity",
+      "label": "Night Terminal Design Identity",
+      "nodes": [
+        "design_night_terminal",
+        "design_signal_amber",
+        "design_typography",
+        "product_positioning",
+        "product_brand_personality"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "DESIGN.md"
+    },
+    {
+      "id": "frontend_tech_stack",
+      "label": "Frontend Tech Stack Bundle",
+      "nodes": [
+        "readme_react",
+        "readme_typescript",
+        "readme_vite",
+        "readme_tailwindcss",
+        "readme_framermotion"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "README.md"
     }
   ]
 }
