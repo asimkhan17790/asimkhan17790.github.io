@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     name: 'Pop the Reveal',
     description:
-      'Honeybee-themed balloon-pop party game for gender reveals. Guests pick a team and play a physics-driven cannon round; scores stay hidden until the host runs the reveal.',
+      'Honeybee-themed balloon-pop party game for gender reveals. Guests pick a team and play a physics-driven cannon round, while a live scoreboard shows which team is winning.',
     url: 'https://github.com/asimkhan17790/pop-the-reveal',
     liveUrl: 'https://www.popthereveal.com/',
     language: 'TypeScript',
