@@ -16,6 +16,10 @@ No test runner is configured. Type-check only via `tsc --noEmit`.
 
 See [@./README.md]for full project structure, key behaviors, and tech stack details. @Claude please update README.md file according to the project structure and key behaviors, and tech stack details.
 
+## Design Context
+
+Strategic and visual design context lives in `PRODUCT.md` (register: brand, users, positioning, anti-references) and `DESIGN.md` (colors, typography, elevation, components — North Star: "The Night Terminal"). Impeccable skill commands (`craft`, `critique`, `audit`, `polish`, etc.) read these before doing any design work; read them first for any UI/visual task too.
+
 ## graphify
 
 This project has a graphify knowledge graph at graphify-out/.
