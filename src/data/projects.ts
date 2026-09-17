@@ -3,9 +3,19 @@ export interface Project {
   description: string
   url: string
   language: string
+  /** Live deployment. Cards with one render full-width with separate Play and Code links. */
+  liveUrl?: string
 }
 
 export const projects: Project[] = [
+  {
+    name: 'Pop the Reveal',
+    description:
+      'Honeybee-themed balloon-pop party game for gender reveals. Guests pick a team and play a physics-driven cannon round; scores stay hidden until the host runs the reveal.',
+    url: 'https://github.com/asimkhan17790/pop-the-reveal',
+    liveUrl: 'https://www.popthereveal.com/',
+    language: 'TypeScript',
+  },
   {
     name: "The Sorcerer's Board",
     description: 'Harry Potter themed chess game',
